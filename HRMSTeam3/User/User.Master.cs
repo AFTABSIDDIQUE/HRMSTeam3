@@ -14,7 +14,6 @@ namespace HRMSTeam3.User
             Label1.Text = Session["Users"].ToString();
         }
 
-
         protected void Button1_Click(object sender, EventArgs e)
         {
             Session.Abandon();
