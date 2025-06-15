@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="LoginDB.aspx.cs" Inherits="HRMSTeam3.LoginDB" %>
+﻿    <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="LoginDB.aspx.cs" Inherits="HRMSTeam3.LoginDB" %>
 
 <!DOCTYPE html>
 
