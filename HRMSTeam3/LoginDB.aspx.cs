@@ -30,19 +30,19 @@ namespace HRMSTeam3
                 Session["Users"] = em;
                 while (rdr.Read())
                 {
-                    if (rdr["email"].Equals(em) || rdr["name"].Equals(em) && rdr["password"].Equals(pass) && rdr["role"].Equals("Admin"))
+                    if (rdr["email"].Equals(em) || rdr["Username"].Equals(em) && rdr["password"].Equals(pass) && rdr["role"].Equals("admin"))
                     {
                         Response.Redirect("/Admin/AdminHome.aspx");
                     }
-                    if (rdr["email"].Equals(em) || rdr["name"].Equals(em) && rdr["password"].Equals(pass) && rdr["role"].Equals("User"))
+                    if (rdr["email"].Equals(em) || rdr["Username"].Equals(em) && rdr["password"].Equals(pass) && rdr["role"].Equals("user"))
                     {
                         Response.Redirect("/User/UserHome.aspx");
                     }
-                    if (rdr["email"].Equals(em) || rdr["name"].Equals(em) && rdr["password"].Equals(pass) && rdr["role"].Equals("HR"))
+                    if (rdr["email"].Equals(em) || rdr["Username"].Equals(em) && rdr["password"].Equals(pass) && rdr["role"].Equals("HR"))
                     {
                         Response.Redirect("/HR/HRHome.aspx");
                     }
-                    if (rdr["email"].Equals(em) || rdr["name"].Equals(em) && rdr["password"].Equals(pass) && rdr["role"].Equals("Manager"))
+                    if (rdr["email"].Equals(em) || rdr["Username"].Equals(em) && rdr["password"].Equals(pass) && rdr["role"].Equals("Manager"))
                     {
                         Response.Redirect("/Manager/ManagerHome.aspx");
                     }
