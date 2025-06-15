@@ -17,7 +17,7 @@
             <br />
             <br />
             Password:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:TextBox placeholder="Enter Password" ID="TextBox2" runat="server"></asp:TextBox>
+            <asp:TextBox placeholder="Enter Password" ID="TextBox2" runat="server" TextMode="Password"></asp:TextBox>
             <br />
             <br />
             <asp:Button ID="Button1" runat="server" Text="Login" OnClick="Button1_Click" />
