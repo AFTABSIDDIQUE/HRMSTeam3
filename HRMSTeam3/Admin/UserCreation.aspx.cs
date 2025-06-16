@@ -42,9 +42,6 @@ namespace HRMSTeam3.Admin
             int rows = cmd.ExecuteNonQuery();
             if (rows>0)
             {
-                string qu = $"exec addUserLogin '{email}','{fname}','{pass}','{role}'";
-                SqlCommand cmnd = new SqlCommand(qu, conn);
-                cmnd.ExecuteNonQuery();
                 Response.Write("<script>alert('User Created Successfully...')</script>");
                 clear();
             }
