@@ -73,6 +73,7 @@
     <Content Include="Admin\AddAppraisal.aspx" />
     <Content Include="Admin\AddPIndicator.aspx" />
     <Content Include="Admin\AddTrainer.aspx" />
+    <Content Include="Admin\AddTrainingList.aspx" />
     <Content Include="Admin\AddTrainingType.aspx" />
     <Content Include="Admin\AdminHome.aspx" />
     <Content Include="Admin\UserCreation.aspx" />
@@ -104,6 +105,13 @@
     </Compile>
     <Compile Include="Admin\AddTrainer.aspx.designer.cs">
       <DependentUpon>AddTrainer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AddTrainingList.aspx.cs">
+      <DependentUpon>AddTrainingList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddTrainingList.aspx.designer.cs">
+      <DependentUpon>AddTrainingList.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\AddTrainingType.aspx.cs">
       <DependentUpon>AddTrainingType.aspx</DependentUpon>
