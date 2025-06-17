@@ -7,17 +7,17 @@ using System.Web.UI.WebControls;
 
 namespace HRMSTeam3.Admin
 {
-    public partial class Admin : System.Web.UI.MasterPage
+    public partial class AddAppraisal : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //Label1.Text = Session["Users"].ToString();
+
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        public void fetchRole()
         {
-            Session.Abandon();
-            Response.Redirect("../LoginDB.aspx");
+
         }
+
     }
 }

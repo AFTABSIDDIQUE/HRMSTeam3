@@ -53,12 +53,23 @@
                             Performance Management 
                           </a>
                           <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/Admin/UserCreation.aspx">Create User</a></li>
+                            <li><a class="dropdown-item" href="/Admin/AddPIndicator.aspx">Performance Indicator</a></li>
                             <li><a class="dropdown-item" href="/Admin/UserUpdation.aspx">User Updation</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                           </ul>
                         </li>
+                         <li class="nav-item dropdown">
+                               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                 Training 
+                               </a>
+                               <ul class="dropdown-menu">
+                                 <li><a class="dropdown-item" href="/Admin/AddTrainer.aspx">Add Trainer</a></li>
+                                 <li><a class="dropdown-item" href="/Admin/AddTrainingType.aspx">Training Type</a></li>
+                                 <li><hr class="dropdown-divider"></li>
+                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
+                               </ul>
+                             </li>
                         <li class="nav-item">
                           <a class="nav-link disabled" aria-disabled="true">Disabled</a>
                         </li>
