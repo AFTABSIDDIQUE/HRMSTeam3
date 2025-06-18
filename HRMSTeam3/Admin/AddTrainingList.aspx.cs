@@ -71,7 +71,25 @@ namespace HRMSTeam3.Admin
 
         protected void Button2_Click(object sender, EventArgs e)
         {
+            string trainer=DropDownList1.SelectedValue,trainingType=DropDownList2.SelectedValue,employee=DropDownList3.SelectedValue,desc= txtDescription.Text,status=DropDownList4.SelectedValue,startDate=TextBox2.Text,endDate=TextBox3.Text;
+            double trainingCost = double.Parse(TextBox1.Text);
+            string q = $"exec manageTraining '0','{trainer}','{trainingType}','{employee}','{trainingCost}','{desc}','{status}','{startDate}','{endDate}'";
+            SqlCommand cmd = new SqlCommand(q, conn);
+            cmd.ExecuteNonQuery();
+            Response.Write("<script>alert('Training Assign Successfully...')</script>");
+            clear();
 
+
+        }
+        public void clear()
+        {
+            TextBox1.Text = "";
+            TextBox2.Text = "";
+            TextBox3.Text = "";
+            DropDownList1.ClearSelection();
+            DropDownList2.ClearSelection();
+            DropDownList3.ClearSelection();
+            DropDownList4.ClearSelection();
         }
     }
 }

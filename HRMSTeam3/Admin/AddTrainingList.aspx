@@ -5,8 +5,6 @@
     <p>
         &nbsp;Add Training List</p>
     <p>
-        &nbsp;</p>
-    <p>
 &nbsp; Trainer</p>
     <p>
         &nbsp;&nbsp;<asp:DropDownList ID="DropDownList1" runat="server">
@@ -33,22 +31,24 @@
     <p>
         &nbsp;Description</p>
     <p>
-        &nbsp;&nbsp;<textarea id="TextArea1" cols="20" name="S1" rows="2"></textarea></p>
+        &nbsp;&nbsp;<asp:TextBox ID="txtDescription" runat="server" TextMode="MultiLine" Rows="4" Columns="50" /></textBox></p>
     <p>
         &nbsp;Status</p>
     <p>
         &nbsp;&nbsp;<asp:DropDownList ID="DropDownList4" runat="server">
+            <asp:ListItem>Active</asp:ListItem>
+            <asp:ListItem>InActive</asp:ListItem>
         </asp:DropDownList>
     </p>
     <p>
         &nbsp;Start Date</p>
 &nbsp;
-    <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+    <asp:TextBox ID="TextBox2" runat="server" TextMode="Date"></asp:TextBox>
     <br />
     <p>
         &nbsp;End Date</p>
 &nbsp;
-    <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+    <asp:TextBox ID="TextBox3" runat="server" TextMode="Date"></asp:TextBox>
     <br />
     <br />
     <p>
