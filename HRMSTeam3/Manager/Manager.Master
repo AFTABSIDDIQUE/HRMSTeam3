@@ -82,8 +82,6 @@
                         <ul class="list-unstyled ps-3">
                             <li><a class="nav-link" href="#">Action</a></li>
                             <li><a class="nav-link" href="#">Another action</a></li>
-                            <li><hr /></li>
-                            <li><a class="nav-link" href="#">Something else here</a></li>
                         </ul>
                     </div>
                 </li>

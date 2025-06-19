@@ -81,6 +81,7 @@
     <Content Include="HR\HRHome.aspx" />
     <Content Include="LoginDB.aspx" />
     <Content Include="Manager\ManagerHome.aspx" />
+    <Content Include="meet.png" />
     <Content Include="User\Training.aspx" />
     <Content Include="User\UserHome.aspx" />
     <Content Include="Web.config" />

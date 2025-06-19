@@ -84,14 +84,12 @@
                     <!-- User Management -->
                     <li class="nav-item">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#userManagement">
-                            User Management
+                            User
                         </a>
                         <div class="collapse" id="userManagement">
                             <ul class="list-unstyled ps-3">
                                 <li><a class="nav-link" href="/Admin/UserCreation.aspx">Create User</a></li>
                                 <li><a class="nav-link" href="/Admin/UserUpdation.aspx">User Updation</a></li>
-                                <li><hr /></li>
-                                <li><a class="nav-link" href="#">Something else here</a></li>
                             </ul>
                         </div>
                     </li>
@@ -99,14 +97,12 @@
                     <!-- Performance Management -->
                     <li class="nav-item">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#performanceMgmt">
-                            Performance Management
+                            Performance
                         </a>
                         <div class="collapse" id="performanceMgmt">
                             <ul class="list-unstyled ps-3">
                                 <li><a class="nav-link" href="/Admin/AddPIndicator.aspx">Performance Indicator</a></li>
                                 <li><a class="nav-link" href="/Admin/UserUpdation.aspx">User Updation</a></li>
-                                <li><hr /></li>
-                                <li><a class="nav-link" href="#">Something else here</a></li>
                             </ul>
                         </div>
                     </li>
@@ -121,8 +117,6 @@
                                 <li><a class="nav-link" href="/Admin/AddTrainer.aspx">Add Trainer</a></li>
                                 <li><a class="nav-link" href="/Admin/AddTrainingType.aspx">Training Type</a></li>
                                 <li><a class="nav-link" href="/Admin/AddTrainingList.aspx">Assign Training</a></li>
-                                <li><hr /></li>
-                                <li><a class="nav-link" href="#">Something else here</a></li>
                             </ul>
                         </div>
                     </li>
