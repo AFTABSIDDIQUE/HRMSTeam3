@@ -1,64 +1,136 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="HRMSTeam3.Admin.Admin" %>
 
 <!DOCTYPE html>
-
 <html>
 <head runat="server">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
-    <title>
-            <asp:ContentPlaceHolder ID="head" runat="server">
-            </asp:ContentPlaceHolder>
-    </title>
+    <title><asp:ContentPlaceHolder ID="head" runat="server" /></title>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        .main-wrapper {
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #311E10;
+            padding: 1rem;
+            height: 100vh;
+            overflow-y: auto;
+        }
+
+        .content-area {
+            flex-grow: 1;
+            padding: 1rem;
+            overflow-y: auto;
+            background-color: #f8f9fa;
+        }
+
+        .sidebar .nav-link {
+            color: #ECE4B7;
+        }
+
+        .sidebar .nav-link:hover {
+            background-color: #e9ecef;
+            color: #311E10;
+            border-radius: 4px;
+        }
+
+        .dropdown-toggle::after {
+            float: right;
+            margin-top: 8px;
+        }
+
+        .sidebar hr {
+            border-color: #ECE4B7;
+        }
+    </style>
 </head>
+
 <body>
     <form id="form1" runat="server">
-        <div>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                  <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Navbar</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <div class="main-wrapper">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <h4 class="text-center mb-4" style="color:#ECE4B7">Admin Panel</h4>
+
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Admin/AdminHome.aspx">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#userDropdown">
                             Hello <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-                          </a>
-                          <ul class="dropdown-menu">
-                              <asp:Button class="dropdown-item" ID="Button1" runat="server" Text="Logout" OnClick="Button1_Click" />
-                          </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            User Management
-                          </a>
-                          <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/Admin/UserCreation.aspx">Create User</a></li>
-                            <li><a class="dropdown-item" href="/Admin/UserUpdation.aspx">User Updation</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                          </ul>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-              </nav>
-        </div>
-        <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
+                        </a>
+                        <div class="collapse" id="userDropdown">
+                            <ul class="list-unstyled ps-3">
+                                <li>
+                                    <a class="nav-link"><asp:Button ID="Button1" CssClass="dropdown-item" runat="server" Text="Logout" OnClick="Button1_Click" /></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- User Management -->
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#userManagement">
+                            User
+                        </a>
+                        <div class="collapse" id="userManagement">
+                            <ul class="list-unstyled ps-3">
+                                <li><a class="nav-link" href="/Admin/UserCreation.aspx">Create User</a></li>
+                                <li><a class="nav-link" href="/Admin/UserUpdation.aspx">User Updation</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- Performance Management -->
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#performanceMgmt">
+                            Performance
+                        </a>
+                        <div class="collapse" id="performanceMgmt">
+                            <ul class="list-unstyled ps-3">
+                                <li><a class="nav-link" href="/Admin/AddPIndicator.aspx">Performance Indicator</a></li>
+                                <li><a class="nav-link" href="/Admin/UserUpdation.aspx">User Updation</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- Training -->
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#training">
+                            Training
+                        </a>
+                        <div class="collapse" id="training">
+                            <ul class="list-unstyled ps-3">
+                                <li><a class="nav-link" href="/Admin/AddTrainer.aspx">Add Trainer</a></li>
+                                <li><a class="nav-link" href="/Admin/AddTrainingType.aspx">Training Type</a></li>
+                                <li><a class="nav-link" href="/Admin/AddTrainingList.aspx">Assign Training</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Content Area -->
+            <div class="content-area">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+            </div>
         </div>
     </form>
 </body>

@@ -27,25 +27,27 @@ namespace HRMSTeam3
             SqlDataReader rdr = cmd.ExecuteReader();
             if (rdr.HasRows)
             {
-                Session["Users"] = em;
 
                 while (rdr.Read())
                 {
-                    if ((rdr["email"].Equals(em) || rdr["Username"].Equals(em)) && rdr["password"].Equals(pass)) 
+                    int id = int.Parse(rdr["userId"].ToString());
+                    Session["Users"] = em;
+                    Session["UserId"] = id;
+                    if ((rdr["email"].Equals(em) || rdr["fname"].Equals(em)) && rdr["pass"].Equals(pass)) 
                     {
-                        if (rdr["role"].Equals("Admin"))
+                        if (rdr["roleId"].Equals("Admin"))
                         {
                             Response.Redirect("/Admin/AdminHome.aspx");
                         }
-                        else if (rdr["role"].Equals("User"))
+                        else if (rdr["roleId"].Equals("User"))
                         {
                             Response.Redirect("/User/UserHome.aspx");
                         }
-                        else if(rdr["role"].Equals("HR"))
+                        else if(rdr["roleId"].Equals("HR"))
                         {
                             Response.Redirect("/HR/HRHome.aspx");
                         }
-                        else if (rdr["role"].Equals("Manager"))
+                        else if (rdr["roleId"].Equals("Manager"))
                         {
                             Response.Redirect("/Manager/ManagerHome.aspx");
                         }

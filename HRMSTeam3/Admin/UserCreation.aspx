@@ -48,6 +48,7 @@ DepartMent:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb
     <asp:ListItem>IT</asp:ListItem>
     <asp:ListItem>Sales</asp:ListItem>
     <asp:ListItem>Finanace</asp:ListItem>
+    <asp:ListItem>Admin</asp:ListItem>
 </asp:DropDownList>
 &nbsp;&nbsp;
 <br />
