@@ -70,14 +70,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Admin\AddAppraisal.aspx" />
-    <Content Include="Admin\AddPIndicator.aspx" />
-    <Content Include="Admin\AddTrainer.aspx" />
-    <Content Include="Admin\AddTrainingList.aspx" />
-    <Content Include="Admin\AddTrainingType.aspx" />
+    <Content Include="Performance\AddAppraisal.aspx" />
+    <Content Include="Performance\AddPIndicator.aspx" />
+    <Content Include="Performance\PerfoemanceReview.aspx" />
+    <Content Include="Training\AddTrainer.aspx" />
+    <Content Include="Training\AddTrainingList.aspx" />
+    <Content Include="Training\AddTrainingType.aspx" />
     <Content Include="Admin\AdminHome.aspx" />
-    <Content Include="Admin\UserCreation.aspx" />
-    <Content Include="Admin\UserUpdation.aspx" />
+    <Content Include="Training\Trainer.aspx" />
+    <Content Include="Training\Training.aspx" />
+    <Content Include="Training\TrainingType.aspx" />
+    <Content Include="Training\UpdateTrainer.aspx" />
+    <Content Include="Training\UpdateTrainigType.aspx" />
+    <Content Include="Training\UpdateTrainingList.aspx" />
+    <Content Include="UserCreation\user.aspx" />
+    <Content Include="UserCreation\UserCreation.aspx" />
+    <Content Include="UserCreation\UserUpdation.aspx" />
     <Content Include="HR\HRHome.aspx" />
     <Content Include="LoginDB.aspx" />
     <Content Include="Manager\ManagerHome.aspx" />
@@ -87,39 +95,46 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin\AddAppraisal.aspx.cs">
+    <Compile Include="Performance\AddAppraisal.aspx.cs">
       <DependentUpon>AddAppraisal.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\AddAppraisal.aspx.designer.cs">
+    <Compile Include="Performance\AddAppraisal.aspx.designer.cs">
       <DependentUpon>AddAppraisal.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\AddPIndicator.aspx.cs">
+    <Compile Include="Performance\AddPIndicator.aspx.cs">
       <DependentUpon>AddPIndicator.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\AddPIndicator.aspx.designer.cs">
+    <Compile Include="Performance\AddPIndicator.aspx.designer.cs">
       <DependentUpon>AddPIndicator.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\AddTrainer.aspx.cs">
+    <Compile Include="Performance\PerfoemanceReview.aspx.cs">
+      <DependentUpon>PerfoemanceReview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Performance\PerfoemanceReview.aspx.designer.cs">
+      <DependentUpon>PerfoemanceReview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Training\AddTrainer.aspx.cs">
       <DependentUpon>AddTrainer.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\AddTrainer.aspx.designer.cs">
+    <Compile Include="Training\AddTrainer.aspx.designer.cs">
       <DependentUpon>AddTrainer.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\AddTrainingList.aspx.cs">
+    <Compile Include="Training\AddTrainingList.aspx.cs">
       <DependentUpon>AddTrainingList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\AddTrainingList.aspx.designer.cs">
+    <Compile Include="Training\AddTrainingList.aspx.designer.cs">
       <DependentUpon>AddTrainingList.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\AddTrainingType.aspx.cs">
+    <Compile Include="Training\AddTrainingType.aspx.cs">
       <DependentUpon>AddTrainingType.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\AddTrainingType.aspx.designer.cs">
+    <Compile Include="Training\AddTrainingType.aspx.designer.cs">
       <DependentUpon>AddTrainingType.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Admin.Master.cs">
@@ -136,18 +151,67 @@
     <Compile Include="Admin\AdminHome.aspx.designer.cs">
       <DependentUpon>AdminHome.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\UserCreation.aspx.cs">
+    <Compile Include="Training\Trainer.aspx.cs">
+      <DependentUpon>Trainer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Training\Trainer.aspx.designer.cs">
+      <DependentUpon>Trainer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Training\Training.aspx.cs">
+      <DependentUpon>Training.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Training\Training.aspx.designer.cs">
+      <DependentUpon>Training.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Training\TrainingType.aspx.cs">
+      <DependentUpon>TrainingType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Training\TrainingType.aspx.designer.cs">
+      <DependentUpon>TrainingType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Training\UpdateTrainer.aspx.cs">
+      <DependentUpon>UpdateTrainer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Training\UpdateTrainer.aspx.designer.cs">
+      <DependentUpon>UpdateTrainer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Training\UpdateTrainigType.aspx.cs">
+      <DependentUpon>UpdateTrainigType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Training\UpdateTrainigType.aspx.designer.cs">
+      <DependentUpon>UpdateTrainigType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Training\UpdateTrainingList.aspx.cs">
+      <DependentUpon>UpdateTrainingList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Training\UpdateTrainingList.aspx.designer.cs">
+      <DependentUpon>UpdateTrainingList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserCreation\user.aspx.cs">
+      <DependentUpon>user.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserCreation\user.aspx.designer.cs">
+      <DependentUpon>user.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserCreation\UserCreation.aspx.cs">
       <DependentUpon>UserCreation.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\UserCreation.aspx.designer.cs">
+    <Compile Include="UserCreation\UserCreation.aspx.designer.cs">
       <DependentUpon>UserCreation.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\UserUpdation.aspx.cs">
+    <Compile Include="UserCreation\UserUpdation.aspx.cs">
       <DependentUpon>UserUpdation.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\UserUpdation.aspx.designer.cs">
+    <Compile Include="UserCreation\UserUpdation.aspx.designer.cs">
       <DependentUpon>UserUpdation.aspx</DependentUpon>
     </Compile>
     <Compile Include="HR\HR.Master.cs">
@@ -222,7 +286,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Admin\trainerimg\" />
+    <Folder Include="NewFolder1\" />
+    <Folder Include="Trainerimg\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
