@@ -9,7 +9,7 @@ using System.Web.UI.WebControls;
 
 namespace HRMSTeam3.Admin
 {
-    public partial class AddPIndicator : System.Web.UI.Page
+    public partial class AddAppraisal : System.Web.UI.Page
     {
         SqlConnection conn;
         protected void Page_Load(object sender, EventArgs e)
@@ -21,50 +21,50 @@ namespace HRMSTeam3.Admin
             if (!IsPostBack)
             {
                 DepartmentData();
+                fetchEmp();
             }
         }
 
         public void DepartmentData()
         {
-            string query = "SELECT DISTINCT roleId FROM userCreation";
+            string query = "SELECT DISTINCT designation FROM userCreation";
             SqlCommand cmd = new SqlCommand(query, conn);
             //conn.Open();
 
             SqlDataReader reader = cmd.ExecuteReader();
-            DropDownList10.DataSource = reader;
-            DropDownList10.DataTextField = "roleId";  // Display field
-            DropDownList10.DataValueField = "roleId";   // Value field
-            DropDownList10.DataBind();
+            DropDownList2.DataSource = reader;
+            DropDownList2.DataTextField = "designation";  // Display field
+            DropDownList2.DataValueField = "designation";   // Value field
+            DropDownList2.DataBind();
 
             string q = "SELECT DISTINCT deptId FROM userCreation";
             SqlCommand cmnd = new SqlCommand(q, conn);
             SqlDataReader read = cmnd.ExecuteReader();
-            DropDownList11.DataSource = read;
-            DropDownList11.DataTextField = "deptId";
-            DropDownList11.DataValueField = "deptId";
-            DropDownList11.DataBind();
-
-        }
-        public void DesignationData()
-        {
+            DropDownList3.DataSource = read;
+            DropDownList3.DataTextField = "deptId";
+            DropDownList3.DataValueField = "deptId";
+            DropDownList3.DataBind();
 
         }
 
-        protected void DropDownList10_SelectedIndexChanged(object sender, EventArgs e)
+        public void fetchEmp()
         {
-
-        }
-
-        protected void DropDownList11_SelectedIndexChanged(object sender, EventArgs e)
-        {
+            string q = "select fname from userCreation where roleId='User'";
+            SqlCommand cmd = new SqlCommand(q, conn);
+            SqlDataReader rdr = cmd.ExecuteReader();
+            if (rdr.HasRows)
+            {
+                while (rdr.Read())
+                {
+                    string role = rdr["fname"].ToString();
+                    DropDownList1.Items.Add(role);
+                }
+            }
 
         }
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-            string q = "exec AddPIndicator ";
-            SqlCommand cmd = new SqlCommand(q,conn);
-            cmd.ExecuteNonQuery();
 
         }
     }

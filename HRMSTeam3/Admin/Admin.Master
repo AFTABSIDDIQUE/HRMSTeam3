@@ -53,7 +53,60 @@
         .sidebar hr {
             border-color: #ECE4B7;
         }
+        .form-section {
+            padding: 30px;
+            border-radius: 15px;
+            background-color: #ECE4B7;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+
+        .form-control:focus {
+            color: #311E10;
+            border-color: #311E10;
+            box-shadow: 0 0 5px 2px #311E10;
+            transition: all 0.3s ease;
+        }
+
+        .btn-custom {
+        background-color: #311E10;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        }
+
+                .grid-header {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #311E10;
+        }
+
+        .grid-wrapper {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            overflow-x: auto;
+        }
+
+        .gridview table {
+            width: 100%;
+        }
+
+        .gridview th {
+            background-color: #311E10;
+            color: white;
+            text-align: center;
+        }
+
+        .gridview td {
+            text-align: center;
+        }
     </style>
+
 </head>
 
 <body>
@@ -88,8 +141,8 @@
                         </a>
                         <div class="collapse" id="userManagement">
                             <ul class="list-unstyled ps-3">
-                                <li><a class="nav-link" href="/Admin/UserCreation.aspx">Create User</a></li>
-                                <li><a class="nav-link" href="/Admin/UserUpdation.aspx">User Updation</a></li>
+                                <li><a class="nav-link" href="../UserCreation/user.aspx">View User</a></li>
+                              <%--  <li><a class="nav-link" href="../UserCreation/UserUpdation.aspx">User Updation</a></li>--%>
                             </ul>
                         </div>
                     </li>
@@ -101,8 +154,9 @@
                         </a>
                         <div class="collapse" id="performanceMgmt">
                             <ul class="list-unstyled ps-3">
-                                <li><a class="nav-link" href="/Admin/AddPIndicator.aspx">Performance Indicator</a></li>
-                                <li><a class="nav-link" href="/Admin/UserUpdation.aspx">User Updation</a></li>
+                                <li><a class="nav-link" href="../Performance/AddPIndicator.aspx">Performance Indicator</a></li>
+                                <li><a class="nav-link" href="../Performance/AddAppraisal.aspx">Add Appraisal</a></li>
+                                <li><a class="nav-link" href="../Performance/PerfoemanceReview.aspx">PerfoemanceReview</a></li>
                             </ul>
                         </div>
                     </li>
@@ -114,9 +168,9 @@
                         </a>
                         <div class="collapse" id="training">
                             <ul class="list-unstyled ps-3">
-                                <li><a class="nav-link" href="/Admin/AddTrainer.aspx">Add Trainer</a></li>
-                                <li><a class="nav-link" href="/Admin/AddTrainingType.aspx">Training Type</a></li>
-                                <li><a class="nav-link" href="/Admin/AddTrainingList.aspx">Assign Training</a></li>
+                                <li><a class="nav-link" href="../Training/Trainer.aspx">Add Trainer</a></li>
+                                <li><a class="nav-link" href="../Training/TrainingType.aspx">Training Type</a></li>
+                                <li><a class="nav-link" href="../Training/Training.aspx">Assign Training</a></li>
                             </ul>
                         </div>
                     </li>
