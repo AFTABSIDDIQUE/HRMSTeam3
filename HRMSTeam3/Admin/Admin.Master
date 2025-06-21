@@ -39,33 +39,15 @@
                         </li>
                         <li class="nav-item dropdown">
                           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Leaves Management
+                            User Management
                           </a>
                           <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="../Leave Management/LeavePolicySetup.aspx">Add Leaves</a></li>
-                            <li><a class="dropdown-item" href="../Leave Management/LeaveDocumentation.aspx">Leaves Documentation</a></li>
-                            <%--<li><hr class="dropdown-divider"></li>--%>
-                            <li><a class="dropdown-item" href="../Leave Management/LeaveApprovals.aspx">Leave Approvals</a></li>
-                              <li><a class="dropdown-item" href="../Leave Management/LeaveReports.aspx">Leave Reports</a></li>
-                                <!-- Divider -->
+                            <li><a class="dropdown-item" href="/Admin/UserCreation.aspx">Create User</a></li>
+                            <li><a class="dropdown-item" href="/Admin/UserUpdation.aspx">User Updation</a></li>
                             <li><hr class="dropdown-divider"></li>
- 
-                            <li><a class="dropdown-item" href="../Calendar Titles/EventName.aspx">Add Event Name</a></li>
-                            <li><a class="dropdown-item" href="../Calendar Titles/AddHolidays.aspx">Add Holidays</a></li>
-                            <li><a class="dropdown-item" href="../Calendar Titles/CalendarTitle.aspx">Calendar</a></li>
-                          </ul>                            
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
                         </li>
-                          <li class="nav-item dropdown">
-  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Reports and Analysis
-  </a>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="../Reports/ReportsForEmployee.aspx">Employee Report</a></li>
-    <li><a class="dropdown-item" href="../Reports/ReportsForPayroll.aspx">Payroll Report</a></li>
-          <li><a class="dropdown-item" href="../Reports/ReportsForLeave.aspx">Leave Report</a></li>
-
-                            </ul>
-                              </li>
                         <li class="nav-item">
                           <a class="nav-link disabled" aria-disabled="true">Disabled</a>
                         </li>

@@ -28,24 +28,34 @@ namespace HRMSTeam3
             if (rdr.HasRows)
             {
                 Session["Users"] = em;
+
                 while (rdr.Read())
                 {
-                    if (rdr["email"].Equals(em) || rdr["name"].Equals(em) && rdr["password"].Equals(pass) && rdr["role"].Equals("Admin"))
+                    if ((rdr["email"].Equals(em) || rdr["Username"].Equals(em)) && rdr["password"].Equals(pass)) 
                     {
-                        Response.Redirect("/Admin/AdminHome.aspx");
+                        if (rdr["role"].Equals("Admin"))
+                        {
+                            Response.Redirect("/Admin/AdminHome.aspx");
+                        }
+                        else if (rdr["role"].Equals("User"))
+                        {
+                            Response.Redirect("/User/UserHome.aspx");
+                        }
+                        else if(rdr["role"].Equals("HR"))
+                        {
+                            Response.Redirect("/HR/HRHome.aspx");
+                        }
+                        else if (rdr["role"].Equals("Manager"))
+                        {
+                            Response.Redirect("/Manager/ManagerHome.aspx");
+                        }
+                        else
+                        {
+                            Response.Write("404 User Not found");
+                        }
+                        
                     }
-                    if (rdr["email"].Equals(em) || rdr["name"].Equals(em) && rdr["password"].Equals(pass) && rdr["role"].Equals("User"))
-                    {
-                        Response.Redirect("/User/UserHome.aspx");
-                    }
-                    if (rdr["email"].Equals(em) || rdr["name"].Equals(em) && rdr["password"].Equals(pass) && rdr["role"].Equals("HR"))
-                    {
-                        Response.Redirect("/HR/HRHome.aspx");
-                    }
-                    if (rdr["email"].Equals(em) || rdr["name"].Equals(em) && rdr["password"].Equals(pass) && rdr["role"].Equals("Manager"))
-                    {
-                        Response.Redirect("/Manager/ManagerHome.aspx");
-                    }
+
                 }
             }
             else

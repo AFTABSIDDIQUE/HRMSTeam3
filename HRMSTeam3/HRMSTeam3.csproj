@@ -82,6 +82,8 @@
     <Content Include="Admin\Reports\ReportsForEmployee.aspx" />
     <Content Include="Admin\Reports\ReportsForLeave.aspx" />
     <Content Include="Admin\Reports\ReportsForPayroll.aspx" />
+    <Content Include="Admin\UserCreation.aspx" />
+    <Content Include="Admin\UserUpdation.aspx" />
     <Content Include="HR\HRHome.aspx" />
     <Content Include="LoginDB.aspx" />
     <Content Include="Manager\Leave Management\LeaveApprovals.aspx" />
@@ -179,6 +181,20 @@
     </Compile>
     <Compile Include="Admin\Reports\ReportsForPayroll.aspx.designer.cs">
       <DependentUpon>ReportsForPayroll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserCreation.aspx.cs">
+      <DependentUpon>UserCreation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserCreation.aspx.designer.cs">
+      <DependentUpon>UserCreation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserUpdation.aspx.cs">
+      <DependentUpon>UserUpdation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserUpdation.aspx.designer.cs">
+      <DependentUpon>UserUpdation.aspx</DependentUpon>
     </Compile>
     <Compile Include="HR\HR.Master.cs">
       <DependentUpon>HR.Master</DependentUpon>
