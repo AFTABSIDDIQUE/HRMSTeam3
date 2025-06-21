@@ -7,7 +7,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace HRMSTeam3.Admin.Leave_Management
+namespace HRMSTeam3.Manager.Leave_Management
 {
     public partial class LeavePolicySetup : System.Web.UI.Page
     {

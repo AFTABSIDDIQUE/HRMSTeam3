@@ -8,7 +8,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace HRMSTeam3.Admin.Leave_Management
+namespace HRMSTeam3.Manager.Leave_Management
 {
     public partial class LeaveReports : System.Web.UI.Page
     {
@@ -18,7 +18,7 @@ namespace HRMSTeam3.Admin.Leave_Management
             string cnf = ConfigurationManager.ConnectionStrings["dbconn"].ConnectionString;
             conn = new SqlConnection(cnf);
             conn.Open();
-            //InsertReport();
+            
             if (!IsPostBack)
             {
                 DisplayReport();
@@ -37,11 +37,6 @@ namespace HRMSTeam3.Admin.Leave_Management
             GridView1.DataSource=dt;
             GridView1.DataBind();
         }
-        //public void InsertReport()
-        //{
-        //    string q = "exec InsertIntoLeaveReport";
-        //    SqlCommand cmd = new SqlCommand(q, conn);
-        //    SqlDataReader  rd= cmd.ExecuteReader();      
-        //}
+        
     }
 }

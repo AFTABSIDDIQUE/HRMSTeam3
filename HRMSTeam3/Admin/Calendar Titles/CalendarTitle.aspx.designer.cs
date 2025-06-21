@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace HRMSTeam3.User.Leaves_Management_users
+namespace HRMSTeam3.Admin.Calendar_Titles
 {
 
 
-    public partial class LeaveCalender
+    public partial class CalendarTitle
     {
 
         /// <summary>

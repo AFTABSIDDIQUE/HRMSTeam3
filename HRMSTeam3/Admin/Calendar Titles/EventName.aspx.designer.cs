@@ -7,47 +7,47 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace HRMSTeam3.Admin.Leave_Management
+namespace HRMSTeam3.Admin.Calendar_Titles
 {
 
 
-    public partial class LeaveDocumentation
+    public partial class EventName
     {
 
         /// <summary>
-        /// ddlDepartment control.
+        /// eventId control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlDepartment;
+        protected global::System.Web.UI.WebControls.TextBox eventId;
 
         /// <summary>
-        /// ddlLeaveType control.
+        /// DropDownList1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlLeaveType;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
 
         /// <summary>
-        /// LeaveGrid control.
+        /// ColorId control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView LeaveGrid;
+        protected global::System.Web.UI.WebControls.TextBox ColorId;
 
         /// <summary>
-        /// Label2 control.
+        /// EventBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.Button EventBtn;
     }
 }

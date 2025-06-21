@@ -7,47 +7,38 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace HRMSTeam3.Admin.Leave_Management
+namespace HRMSTeam3.Manager.Leave_Management
 {
 
 
-    public partial class LeaveDocumentation
+    public partial class LeaveApprovals
     {
 
         /// <summary>
-        /// ddlDepartment control.
+        /// ApproveGrid control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlDepartment;
+        protected global::System.Web.UI.WebControls.GridView ApproveGrid;
 
         /// <summary>
-        /// ddlLeaveType control.
+        /// CheckStatId control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlLeaveType;
+        protected global::System.Web.UI.WebControls.Button CheckStatId;
 
         /// <summary>
-        /// LeaveGrid control.
+        /// CheckStatLeave control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView LeaveGrid;
-
-        /// <summary>
-        /// Label2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.GridView CheckStatLeave;
     }
 }

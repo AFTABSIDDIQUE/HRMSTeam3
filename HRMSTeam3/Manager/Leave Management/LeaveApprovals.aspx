@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/Admin.Master" AutoEventWireup="true" CodeBehind="LeaveApprovals.aspx.cs" Inherits="HRMSTeam3.Admin.Leave_Management.LeaveApprovals" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Manager/Manager.Master" AutoEventWireup="true" CodeBehind="LeaveApprovals.aspx.cs" Inherits="HRMSTeam3.Manager.Leave_Management.LeaveApprovals" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
   

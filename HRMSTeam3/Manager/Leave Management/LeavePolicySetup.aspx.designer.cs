@@ -7,21 +7,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace HRMSTeam3.User.Leaves_Management_users
+namespace HRMSTeam3.Manager.Leave_Management
 {
 
 
-    public partial class ApplyLeave
+    public partial class LeavePolicySetup
     {
-
-        /// <summary>
-        /// EmpName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox EmpName;
 
         /// <summary>
         /// RequiredFieldValidator1 control.
@@ -33,75 +24,57 @@ namespace HRMSTeam3.User.Leaves_Management_users
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
 
         /// <summary>
-        /// LeaveList control.
+        /// department control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList LeaveList;
+        protected global::System.Web.UI.WebControls.TextBox department;
 
         /// <summary>
-        /// StartDate control.
+        /// RequiredFieldValidator2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox StartDate;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
 
         /// <summary>
-        /// EndDate control.
+        /// LeaveTitleId control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox EndDate;
+        protected global::System.Web.UI.WebControls.TextBox LeaveTitleId;
 
         /// <summary>
-        /// Duration control.
+        /// RequiredFieldValidator3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Duration;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
 
         /// <summary>
-        /// Reason control.
+        /// EntitlementsId control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Reason;
+        protected global::System.Web.UI.WebControls.TextBox EntitlementsId;
 
         /// <summary>
-        /// LeaveRequestBtn control.
+        /// AddLeaveBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button LeaveRequestBtn;
-
-        /// <summary>
-        /// TrackId control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button TrackId;
-
-        /// <summary>
-        /// TrackView control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView TrackView;
+        protected global::System.Web.UI.WebControls.Button AddLeaveBtn;
     }
 }

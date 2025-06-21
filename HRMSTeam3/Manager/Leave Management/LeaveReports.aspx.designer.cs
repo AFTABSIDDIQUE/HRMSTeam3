@@ -7,20 +7,20 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace HRMSTeam3.User.Leaves_Management_users
+namespace HRMSTeam3.Manager.Leave_Management
 {
 
 
-    public partial class LeaveCalender
+    public partial class LeaveReports
     {
 
         /// <summary>
-        /// Calendar1 control.
+        /// GridView1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar Calendar1;
+        protected global::System.Web.UI.WebControls.GridView GridView1;
     }
 }

@@ -43,7 +43,7 @@
                             Leave Management For Users
                           </a>
                           <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="ApplyLeave.aspx">Apply For Leave</a></li>
+                            <li><a class="dropdown-item" href="apply.aspx">Apply For Leave</a></li>
                             <li><a class="dropdown-item" href="LeaveBalance.aspx">Balanced Leave</a></li>
        
                             <li><a class="dropdown-item" href="LeaveCalender.aspx">Leave Calender</a></li>

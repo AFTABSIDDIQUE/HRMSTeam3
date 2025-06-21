@@ -47,6 +47,7 @@
     <Reference Include="System.Data.SqlClient, Version=4.6.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Data.SqlClient.4.9.0\lib\net462\System.Data.SqlClient.dll</HintPath>
     </Reference>
+    <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -71,14 +72,24 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin\AdminHome.aspx" />
+    <Content Include="Admin\Calendar Titles\AddHolidays.aspx" />
+    <Content Include="Admin\Calendar Titles\CalendarTitle.aspx" />
+    <Content Include="Admin\Calendar Titles\EventName.aspx" />
     <Content Include="Admin\Leave Management\LeaveApprovals.aspx" />
     <Content Include="Admin\Leave Management\LeaveDocumentation.aspx" />
     <Content Include="Admin\Leave Management\LeavePolicySetup.aspx" />
     <Content Include="Admin\Leave Management\LeaveReports.aspx" />
+    <Content Include="Admin\Reports\ReportsForEmployee.aspx" />
+    <Content Include="Admin\Reports\ReportsForLeave.aspx" />
+    <Content Include="Admin\Reports\ReportsForPayroll.aspx" />
     <Content Include="HR\HRHome.aspx" />
     <Content Include="LoginDB.aspx" />
+    <Content Include="Manager\Leave Management\LeaveApprovals.aspx" />
+    <Content Include="Manager\Leave Management\LeaveDocumentation.aspx" />
+    <Content Include="Manager\Leave Management\LeavePolicySetup.aspx" />
+    <Content Include="Manager\Leave Management\LeaveReports.aspx" />
     <Content Include="Manager\ManagerHome.aspx" />
-    <Content Include="User\Leaves Management users\ApplyLeave.aspx" />
+    <Content Include="User\Leaves Management users\apply.aspx" />
     <Content Include="User\Leaves Management users\LeaveBalance.aspx" />
     <Content Include="User\Leaves Management users\LeaveCalender.aspx" />
     <Content Include="User\UserHome.aspx" />
@@ -98,6 +109,27 @@
     </Compile>
     <Compile Include="Admin\AdminHome.aspx.designer.cs">
       <DependentUpon>AdminHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Calendar Titles\AddHolidays.aspx.cs">
+      <DependentUpon>AddHolidays.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Calendar Titles\AddHolidays.aspx.designer.cs">
+      <DependentUpon>AddHolidays.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Calendar Titles\CalendarTitle.aspx.cs">
+      <DependentUpon>CalendarTitle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Calendar Titles\CalendarTitle.aspx.designer.cs">
+      <DependentUpon>CalendarTitle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Calendar Titles\EventName.aspx.cs">
+      <DependentUpon>EventName.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Calendar Titles\EventName.aspx.designer.cs">
+      <DependentUpon>EventName.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Leave Management\LeaveApprovals.aspx.cs">
       <DependentUpon>LeaveApprovals.aspx</DependentUpon>
@@ -127,6 +159,27 @@
     <Compile Include="Admin\Leave Management\LeaveReports.aspx.designer.cs">
       <DependentUpon>LeaveReports.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Reports\ReportsForEmployee.aspx.cs">
+      <DependentUpon>ReportsForEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Reports\ReportsForEmployee.aspx.designer.cs">
+      <DependentUpon>ReportsForEmployee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Reports\ReportsForLeave.aspx.cs">
+      <DependentUpon>ReportsForLeave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Reports\ReportsForLeave.aspx.designer.cs">
+      <DependentUpon>ReportsForLeave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Reports\ReportsForPayroll.aspx.cs">
+      <DependentUpon>ReportsForPayroll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Reports\ReportsForPayroll.aspx.designer.cs">
+      <DependentUpon>ReportsForPayroll.aspx</DependentUpon>
+    </Compile>
     <Compile Include="HR\HR.Master.cs">
       <DependentUpon>HR.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -148,6 +201,34 @@
     <Compile Include="LoginDB.aspx.designer.cs">
       <DependentUpon>LoginDB.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Manager\Leave Management\LeaveApprovals.aspx.cs">
+      <DependentUpon>LeaveApprovals.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manager\Leave Management\LeaveApprovals.aspx.designer.cs">
+      <DependentUpon>LeaveApprovals.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Leave Management\LeaveDocumentation.aspx.cs">
+      <DependentUpon>LeaveDocumentation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manager\Leave Management\LeaveDocumentation.aspx.designer.cs">
+      <DependentUpon>LeaveDocumentation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Leave Management\LeavePolicySetup.aspx.cs">
+      <DependentUpon>LeavePolicySetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manager\Leave Management\LeavePolicySetup.aspx.designer.cs">
+      <DependentUpon>LeavePolicySetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Leave Management\LeaveReports.aspx.cs">
+      <DependentUpon>LeaveReports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manager\Leave Management\LeaveReports.aspx.designer.cs">
+      <DependentUpon>LeaveReports.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Manager\Manager.Master.cs">
       <DependentUpon>Manager.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -163,12 +244,12 @@
       <DependentUpon>ManagerHome.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="User\Leaves Management users\ApplyLeave.aspx.cs">
-      <DependentUpon>ApplyLeave.aspx</DependentUpon>
+    <Compile Include="User\Leaves Management users\apply.aspx.cs">
+      <DependentUpon>apply.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="User\Leaves Management users\ApplyLeave.aspx.designer.cs">
-      <DependentUpon>ApplyLeave.aspx</DependentUpon>
+    <Compile Include="User\Leaves Management users\apply.aspx.designer.cs">
+      <DependentUpon>apply.aspx</DependentUpon>
     </Compile>
     <Compile Include="User\Leaves Management users\LeaveBalance.aspx.cs">
       <DependentUpon>LeaveBalance.aspx</DependentUpon>

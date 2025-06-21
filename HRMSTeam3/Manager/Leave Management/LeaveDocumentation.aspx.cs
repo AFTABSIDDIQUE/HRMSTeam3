@@ -9,7 +9,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace HRMSTeam3.Admin.Leave_Management
+namespace HRMSTeam3.Manager.Leave_Management
 {
     public partial class LeaveDocumentation : System.Web.UI.Page
     {
@@ -25,22 +25,12 @@ namespace HRMSTeam3.Admin.Leave_Management
                 DisplayLeave();
                 LoadDepartments();
                 LoadLeaveTypes();
-                //LabelInfo();
+               
             }
         }
 
-        //This shows all the leaves from the leave table
-        //public void DisplayLeave()
-        //{
-        //    string q = "exec leaveDisplay";
-        //    SqlCommand cmd = new SqlCommand(q, conn);
-        //    SqlDataAdapter da = new SqlDataAdapter(cmd);
-        //    DataTable dt = new DataTable();
-        //    da.Fill(dt);
-        //    LeaveGrid.DataSource = dt;
-        //    LeaveGrid.DataBind();
-        //}
 
+        //load all dept in dropdown
         public void LoadDepartments()
         {
             string query = "SELECT DISTINCT Department FROM leaveTable ORDER BY Department";
@@ -57,6 +47,7 @@ namespace HRMSTeam3.Admin.Leave_Management
             dr.Close();
         }
 
+        //load all leaves in dropdown
         public void LoadLeaveTypes()
         {
             string query = "SELECT DISTINCT leaveName FROM leaveTable ORDER BY leaveName";
@@ -73,12 +64,13 @@ namespace HRMSTeam3.Admin.Leave_Management
             dr.Close();
         }
 
+        //display the leave and dept according to the filter conditions
         public void DisplayLeave()
         {
             string department = ddlDepartment.SelectedValue;
             string leaveType = ddlLeaveType.SelectedValue;
 
-            StringBuilder query = new StringBuilder("SELECT * FROM leaveTable WHERE 1=1 ");
+            StringBuilder query = new StringBuilder("SELECT * FROM leaveTable ");
 
             if (!string.IsNullOrEmpty(department))
             {

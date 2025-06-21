@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace HRMSTeam3.Admin.Leave_Management
+namespace HRMSTeam3.Manager.Leave_Management
 {
 
 
