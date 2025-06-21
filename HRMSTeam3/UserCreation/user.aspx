@@ -12,14 +12,14 @@
                 <div class="grid-wrapper gridview">
                     <asp:GridView ID="GridView1" runat="server" CssClass="table table-bordered table-striped table-hover" AutoGenerateColumns="false">
                         <Columns>
-                            <asp:BoundField DataField="userId" HeaderText="Training ID" />
-                            <asp:BoundField DataField="fname" HeaderText="Training Name" />
-                            <asp:BoundField DataField="email" HeaderText="Description" />
-                            <asp:BoundField DataField="dob" HeaderText="Training Cost" />
-                            <asp:BoundField DataField="address" HeaderText="Description" />
-                            <asp:BoundField DataField="deptId" HeaderText="Description" />
-                            <asp:BoundField DataField="roleId" HeaderText="Description" />
-                            <asp:BoundField DataField="designation" HeaderText="Description" />
+                            <asp:BoundField DataField="userId" HeaderText="User ID" />
+                            <asp:BoundField DataField="fname" HeaderText="User Name" />
+                            <asp:BoundField DataField="email" HeaderText="Email" />
+                            <asp:BoundField DataField="dob" HeaderText="DOB" />
+                            <asp:BoundField DataField="address" HeaderText="Address" />
+                            <asp:BoundField DataField="deptId" HeaderText="Department" />
+                            <asp:BoundField DataField="roleId" HeaderText="Tole" />
+                            <asp:BoundField DataField="designation" HeaderText="Designation" />
 
                             <asp:TemplateField HeaderText="Status">
                                 <ItemTemplate>

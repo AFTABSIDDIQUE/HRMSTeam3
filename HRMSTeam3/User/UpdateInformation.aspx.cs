@@ -10,7 +10,7 @@ using System.Web.UI.WebControls;
 
 namespace HRMSTeam3.User
 {
-    public partial class UpdateInfo : System.Web.UI.Page
+    public partial class UpdateInformation : System.Web.UI.Page
     {
         SqlConnection conn;
         protected void Page_Load(object sender, EventArgs e)
@@ -59,8 +59,8 @@ namespace HRMSTeam3.User
             FileUpload1.SaveAs(savePath);
             string file = "../Profilepic/" + customFileName;
 
-            string full_name = TextBox3.Text, email = TextBox4.Text, mobilenum = TextBox5.Text,manager=DropDownList3.SelectedValue;
-            string dob = TextBox6.Text, doj = TextBox7.Text, department = DropDownList1.SelectedValue, empstatus = DropDownList2.SelectedValue, designation = TextBox8.Text,emecontact = TextBox9.Text;
+            string full_name = TextBox3.Text, email = TextBox4.Text, mobilenum = TextBox5.Text, manager = DropDownList3.SelectedValue;
+            string dob = TextBox6.Text, doj = TextBox7.Text, department = DropDownList1.SelectedValue, empstatus = DropDownList2.SelectedValue, designation = TextBox8.Text, emecontact = TextBox9.Text;
             string q = $"exec newpersonaldata '{eid}','{full_name}','{email}','{mobilenum}','{dob}','{doj}','{department}','{designation}','{manager}','{empstatus}','{emecontact}','{file}'";
             SqlCommand cmd = new SqlCommand(q, conn);
             cmd.ExecuteNonQuery();

@@ -58,6 +58,113 @@
         .fa-bell {
             margin-right: 8px;
         }
+                .btn-custom {
+            background-color: #311E10;
+            color: #fff;
+            border: none;
+        }
+
+        .btn-custom:hover {
+            background-color: #4a2c1a;
+            color: #fff;
+        }
+
+     body, html {
+         height: 100%;
+         margin: 0;
+     }
+
+     .main-wrapper {
+         display: flex;
+         height: 100vh;
+         overflow: hidden;
+     }
+
+     .sidebar {
+         width: 250px;
+         background-color: #311E10;
+         padding: 1rem;
+         height: 100vh;
+         overflow-y: auto;
+     }
+
+     .content-area {
+         flex-grow: 1;
+         padding: 1rem;
+         overflow-y: auto;
+         background-color: #f8f9fa;
+     }
+
+     .sidebar .nav-link {
+         color: #ECE4B7;
+     }
+
+     .sidebar .nav-link:hover {
+         background-color: #e9ecef;
+         color: #311E10;
+         border-radius: 4px;
+     }
+
+     .dropdown-toggle::after {
+         float: right;
+         margin-top: 8px;
+     }
+
+     .sidebar hr {
+         border-color: #ECE4B7;
+     }
+     .form-section {
+         padding: 30px;
+         border-radius: 15px;
+         background-color: #ECE4B7;
+         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+     }
+
+
+     .form-control:focus {
+         color: #311E10;
+         border-color: #311E10;
+         box-shadow: 0 0 5px 2px #311E10;
+         transition: all 0.3s ease;
+     }
+
+     .btn-custom {
+     background-color: #311E10;
+     color: #ffffff;
+     border: none;
+     padding: 10px 20px;
+     border-radius: 5px;
+     transition: background-color 0.3s ease;
+     }
+
+             .grid-header {
+         font-size: 1.5rem;
+         font-weight: bold;
+         margin-bottom: 20px;
+         color: #311E10;
+     }
+
+     .grid-wrapper {
+         background-color: #fff;
+         padding: 20px;
+         border-radius: 10px;
+         border: 1px solid #ddd;
+         overflow-x: auto;
+     }
+
+     .gridview table {
+         width: 100%;
+     }
+
+     .gridview th {
+         background-color: #311E10;
+         color: white;
+         text-align: center;
+     }
+
+     .gridview td {
+         text-align: center;
+     }
     </style>
 </head>
 
@@ -81,10 +188,39 @@
                         <div class="collapse" id="userDropdown">
                             <ul class="list-unstyled ps-3">
                                 <li>
+                                    <a class="nav-link" CssClass="dropdown-item" href="/User/Attendence.aspx">Attendance</a>
                                     <a class="nav-link">
+                                        
                                         <asp:Button ID="Button1" CssClass="dropdown-item" runat="server" Text="Logout" OnClick="Button1_Click" />
                                     </a>
                                 </li>
+                            </ul>
+                        </div>
+                    </li>
+                   <!-- Employee Menu -->
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#EmployeeMenu">
+                            Your Info
+                        </a>
+                        <div class="collapse" id="EmployeeMenu">
+                            <ul class="list-unstyled ps-3">
+                                <li><a class="nav-link" href="/User/ViewData.aspx">View Info</a></li>
+                                <li><a class="nav-link" href="/User/UpdateInformation.aspx">Update Info</a></li>
+                                <li><a class="nav-link" href="/User/personaldocs.aspx">View Documents</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+
+                    <!-- Support Menu -->
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#TicketMenu">
+                            Support
+                        </a>
+                        <div class="collapse" id="TicketMenu">
+                            <ul class="list-unstyled ps-3">
+                                <li><a class="nav-link" href="/User/Tickets.aspx">Raise Tickets</a></li>
+                                <li><a class="nav-link" href="/User/assigned_tickets.aspx">Assigned Ticket</a></li>
                             </ul>
                         </div>
                     </li>

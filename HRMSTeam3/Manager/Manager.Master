@@ -1,15 +1,22 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Manager.master.cs" Inherits="HRMSTeam3.Manager.Manager" %>
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head runat="server">
     <title><asp:ContentPlaceHolder ID="head" runat="server" /></title>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
 
     <style>
-        body {
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        .main-wrapper {
             display: flex;
             height: 100vh;
             overflow: hidden;
@@ -27,6 +34,7 @@
             flex-grow: 1;
             padding: 1rem;
             overflow-y: auto;
+            background-color: #f8f9fa;
         }
 
         .sidebar .nav-link {
@@ -35,7 +43,7 @@
 
         .sidebar .nav-link:hover {
             background-color: #e9ecef;
-            color:#311E10;
+            color: #311E10;
             border-radius: 4px;
         }
 
@@ -43,58 +51,119 @@
             float: right;
             margin-top: 8px;
         }
+
+        .sidebar hr {
+            border-color: #ECE4B7;
+        }
+        .form-section {
+            padding: 30px;
+            border-radius: 15px;
+            background-color: #ECE4B7;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+
+        .form-control:focus {
+            color: #311E10;
+            border-color: #311E10;
+            box-shadow: 0 0 5px 2px #311E10;
+            transition: all 0.3s ease;
+        }
+
+        .btn-custom {
+        background-color: #311E10;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        }
+
+                .grid-header {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #311E10;
+        }
+
+        .grid-wrapper {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            overflow-x: auto;
+        }
+
+        .gridview table {
+            width: 100%;
+        }
+
+        .gridview th {
+            background-color: #311E10;
+            color: white;
+            text-align: center;
+        }
+
+        .gridview td {
+            text-align: center;
+        }
+
     </style>
 </head>
 
 <body>
     <form id="form1" runat="server">
-        <!-- Sidebar -->
-        <div class="sidebar">
-            <h4 class="text-center mb-4" style="color:#ECE4B7">HRMS Panel</h4>
+        <div class="main-wrapper">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <h4 class="text-center mb-4" style="color:#ECE4B7">Manager Dashboard</h4>
 
-            <ul class="nav flex-column">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">Home</a>
-                </li>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Dashboard.aspx">Home</a>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
+                    <!-- User Info -->
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#userDropdown">
+                            Hello <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                        </a>
+                        <div class="collapse" id="userDropdown">
+                            <ul class="list-unstyled ps-3">
+                                <li>
+                                    <a class="nav-link" ><asp:Button ID="Button1" CssClass="dropdown-item" runat="server" Text="Logout"  OnClick="Button1_Click" /></a>
+<%--                                    <a class="nav-link">
+                                        
+                                        <asp:Button ID="Button1" CssClass="dropdown-item" runat="server" Text="Logout" OnClick="Button1_Click" />
+                                    </a>--%>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
 
-                <!-- User Dropdown -->
-                <li class="nav-item">
-                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#userDropdown" aria-expanded="false">
-                        Hello <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-                    </a>
-                    <div class="collapse" id="userDropdown">
-                        <ul class="list-unstyled ps-3">
-                            <li><a class="nav-link"><asp:Button CssClass="dropdown-item" ID="Button1" runat="server" Text="Logout" OnClick="Button1_Click" /></a></li>
-                        </ul>
-                    </div>
-                </li>
+                    <!-- Ticket Menu -->
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#TicketMenu">
+                            Support Tickets
+                        </a>
+                        <div class="collapse" id="TicketMenu">
+                            <ul class="list-unstyled ps-3">
+                                <li><a class="nav-link" href="/Manager/assingticket.aspx">Assign Ticket</a></li>
+                                <li><a class="nav-link" href="/Manager/WebForm1.aspx">Ticket Overview</a></li>
+                            </ul>
+                        </div>
+                    </li>
 
-                <!-- Example Dropdown -->
-                <li class="nav-item">
-                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#exampleDropdown" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <div class="collapse" id="exampleDropdown">
-                        <ul class="list-unstyled ps-3">
-                            <li><a class="nav-link" href="#">Action</a></li>
-                            <li><a class="nav-link" href="#">Another action</a></li>
-                        </ul>
-                    </div>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
 
-                <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                </li>
-            </ul>
-        </div>
-
-        <!-- Main Content -->
-        <div class="content-area">
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+            <!-- Main Content -->
+            <div class="content-area">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+            </div>
         </div>
     </form>
 </body>

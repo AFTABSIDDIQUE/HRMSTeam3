@@ -11,7 +11,7 @@ namespace HRMSTeam3.User
 {
 
 
-    public partial class UpdateInfo
+    public partial class UpdateInformation
     {
 
         /// <summary>

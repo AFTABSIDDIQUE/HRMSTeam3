@@ -1,17 +1,17 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/Admin.Master" AutoEventWireup="true" CodeBehind="UpdateEmp.aspx.cs" Inherits="HRMSTeam3.Admin.UpdateEmp" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/User/User.Master" AutoEventWireup="true" CodeBehind="UpdateInformation.aspx.cs" Inherits="HRMSTeam3.User.UpdateInformation" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="container">
+    <div class="container mt-4">
         <div class="form-section">
-            <h3 class="mb-4">Update Employee</h3>
+            <h3 class="mb-4">Update Employee Info</h3>
 
             <div class="row mb-3">
                 <div class="col-md-6">
                     <label class="form-label">Employee ID</label>
-                    <asp:TextBox ID="TextBox2" runat="server" CssClass="form-control" AutoPostBack="True" OnTextChanged="TextBox2_TextChanged" />
+                    <asp:TextBox ID="TextBox10" runat="server" CssClass="form-control" />
                 </div>
                 <div class="col-md-6">
                     <label class="form-label">Full Name</label>
@@ -33,11 +33,11 @@
             <div class="row mb-3">
                 <div class="col-md-6">
                     <label class="form-label">Date of Birth</label>
-                    <asp:TextBox ID="TextBox6" runat="server" CssClass="form-control" />
+                    <asp:TextBox ID="TextBox6" runat="server" CssClass="form-control" TextMode="Date" />
                 </div>
                 <div class="col-md-6">
                     <label class="form-label">Date of Joining</label>
-                    <asp:TextBox ID="TextBox7" runat="server" TextMode="Date" CssClass="form-control" />
+                    <asp:TextBox ID="TextBox7" runat="server" CssClass="form-control" TextMode="Date" />
                 </div>
             </div>
 
@@ -79,8 +79,19 @@
                 </div>
             </div>
 
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label class="form-label">Emergency Contact</label>
+                    <asp:TextBox ID="TextBox9" runat="server" CssClass="form-control" />
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Profile Picture</label>
+                    <asp:FileUpload ID="FileUpload1" runat="server" CssClass="form-control" />
+                </div>
+            </div>
+
             <div class="text-end">
-                <asp:Button ID="Button2" runat="server" Text="Update" CssClass="btn btn-custom" OnClick="Button2_Click" />
+                <asp:Button ID="Button3" runat="server" Text="Update" CssClass="btn btn-custom" OnClick="Button3_Click" />
             </div>
         </div>
     </div>

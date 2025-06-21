@@ -1,43 +1,42 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/Admin.Master" AutoEventWireup="true" CodeBehind="viewdocs.aspx.cs" Inherits="HRMSTeam3.Admin.viewdocs" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <p>
-    Enter Employee Id:<asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-</p>
-<p>
-    <asp:Button ID="Button2" runat="server" Text="View" OnClick="Button2_Click" />
-</p>
-<p>
-    <asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Height="72px" Width="691px">
-        <AlternatingRowStyle BackColor="White" />
-    <Columns>
-    <asp:BoundField DataField="doc_type" HeaderText="Document Type" />
-    <asp:BoundField DataField="uploaded_on" HeaderText="Uploaded Date" />
-    <asp:TemplateField HeaderText="Download">
-    <ItemTemplate>
-        <asp:HyperLink ID="lnkDownload" runat="server"
-            Text="Download"
-           NavigateUrl='<%# ResolveUrl("~/Admin/" + Eval("file_path").ToString().Replace(" ", "%20")) %>'
-            Target="_blank"
-            CssClass="btn btn-sm btn-secondary">
-        </asp:HyperLink>
-    </ItemTemplate>
-</asp:TemplateField>
+    <div class="container mt-4">
+        <div class="form-section">
+            <h4 class="mb-4">View Uploaded Documents</h4>
 
-</Columns>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="TextBox1" class="form-label">Enter Employee ID</label>
+                    <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control" />
+                </div>
+                <div class="col-md-6 d-flex align-items-end">
+                    <asp:Button ID="Button2" runat="server" Text="View" CssClass="btn btn-custom" OnClick="Button2_Click" />
+                </div>
+            </div>
 
-        <EditRowStyle BackColor="#7C6F57" />
-        <FooterStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
-        <HeaderStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
-        <PagerStyle BackColor="#666666" ForeColor="White" HorizontalAlign="Center" />
-        <RowStyle BackColor="#E3EAEB" />
-        <SelectedRowStyle BackColor="#C5BBAF" Font-Bold="True" ForeColor="#333333" />
-        <SortedAscendingCellStyle BackColor="#F8FAFA" />
-        <SortedAscendingHeaderStyle BackColor="#246B61" />
-        <SortedDescendingCellStyle BackColor="#D4DFE1" />
-        <SortedDescendingHeaderStyle BackColor="#15524A" />
-
-    </asp:GridView>
-</p>
+            <div class="table-responsive">
+                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="table table-striped table-bordered"
+                    GridLines="None" Font-Size="14px" ShowHeaderWhenEmpty="True">
+                    <Columns>
+                        <asp:BoundField DataField="doc_type" HeaderText="Document Type" />
+                        <asp:BoundField DataField="uploaded_on" HeaderText="Uploaded Date" />
+                        <asp:TemplateField HeaderText="Download">
+                            <ItemTemplate>
+                                <asp:HyperLink ID="lnkDownload" runat="server"
+                                    Text="Download"
+                                    NavigateUrl='<%# ResolveUrl("~/Admin/" + Eval("file_path").ToString().Replace(" ", "%20")) %>'
+                                    Target="_blank"
+                                    CssClass="btn btn-sm btn-outline-primary" />
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                    </Columns>
+                    <HeaderStyle CssClass="table-dark" />
+                </asp:GridView>
+            </div>
+        </div>
+    </div>
 </asp:Content>

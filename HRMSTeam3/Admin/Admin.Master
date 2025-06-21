@@ -147,6 +147,37 @@
                         </div>
                     </li>
 
+                    <!-- Employee Management -->
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#employeeManagement">
+                            Emp
+                        </a>
+                        <div class="collapse" id="employeeManagement">
+                            <ul class="list-unstyled ps-3">
+                                <li><a class="nav-link" href="CreateEmp.aspx">Add Emp</a></li>
+                                <li><a class="nav-link" href="UpdateEmp.aspx">Update Emp</a></li>
+                                <li><a class="nav-link" href="Bulkupload.aspx">BulkUpload Emp</a></li>
+                                <li><a class="nav-link" href="ViewAllEmp.aspx">View Emp</a></li>
+                              <%--  <li><a class="nav-link" href="../UserCreation/UserUpdation.aspx">User Updation</a></li>--%>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- Document Management -->
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#documentManagement">
+                            Document
+                        </a>
+                        <div class="collapse" id="documentManagement">
+                            <ul class="list-unstyled ps-3">
+                                <li><a class="nav-link" href="Document_mgmt.aspx">Add Document</a></li>
+                                <li><a class="nav-link" href="viewdocs.aspx">View</a></li>
+                              <%--  <li><a class="nav-link" href="../UserCreation/UserUpdation.aspx">User Updation</a></li>--%>
+                            </ul>
+                        </div>
+                    </li>
+
+
                     <!-- Performance Management -->
                     <li class="nav-item">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#performanceMgmt">
