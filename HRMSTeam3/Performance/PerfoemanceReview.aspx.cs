@@ -72,5 +72,23 @@ namespace HRMSTeam3.Performance
         {
             fetchData();
         }
+
+        protected void btnSubmit_Click(object sender, EventArgs e)
+        {
+            int empId = int.Parse(TextBox1.Text.ToString());
+            string empname=DropDownList1.SelectedValue, Dept= TextBox2.Text, desg= TextBox3.Text, DOJ= TextBox4.Text, prevExp= TextBox5.Text, atten= TextBox6.Text, atti= TextBox7.Text, policy= TextBox8.Text, inint= TextBox9.Text, skillD= TextBox10.Text, prod= TextBox11.Text, process= TextBox12.Text, tMang= TextBox13.Text, know= TextBox14.Text, report= TextBox15.Text;
+            string q = $"exec InsertOrUpdatePerformanceReview '0','{empname}','{empId}','{desg}','{DOJ}','{prevExp}','{atten}','{atti}','{policy}','{inint}','{skillD}','{prod}','{process}','{tMang}','{know}','{report}'";
+            SqlCommand cmd = new SqlCommand(q, conn);
+            int rows = cmd.ExecuteNonQuery();
+            if (rows > 0)
+            {
+                Response.Write("<script>alert('Performance Review Added Successfully...')</script>");
+                clear();
+            }
+            else
+            {
+                Response.Write("<script>alert('Error 404..')</script>");
+            }
+        }
     }
 }
