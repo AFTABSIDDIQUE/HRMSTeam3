@@ -27,10 +27,12 @@ namespace HRMSTeam3
             SqlDataReader rdr = cmd.ExecuteReader();
             if (rdr.HasRows)
             {
-                Session["Users"] = em;
 
                 while (rdr.Read())
                 {
+                    int id = int.Parse(rdr["userId"].ToString());
+                    Session["Users"] = em;
+                    Session["UserId"] = id;
                     if ((rdr["email"].Equals(em) || rdr["fname"].Equals(em)) && rdr["pass"].Equals(pass)) 
                     {
                         if (rdr["roleId"].Equals("Admin"))
