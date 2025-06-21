@@ -154,7 +154,7 @@
                         </a>
                         <div class="collapse" id="employeeManagement">
                             <ul class="list-unstyled ps-3">
-                                <li><a class="nav-link" href="CreateEmp.aspx">Add Emp</a></li>
+                                <li><a class="nav-link" href="../Admin/CreateEmp.aspx">Add Emp</a></li>
                                 <li><a class="nav-link" href="UpdateEmp.aspx">Update Emp</a></li>
                                 <li><a class="nav-link" href="Bulkupload.aspx">BulkUpload Emp</a></li>
                                 <li><a class="nav-link" href="ViewAllEmp.aspx">View Emp</a></li>
