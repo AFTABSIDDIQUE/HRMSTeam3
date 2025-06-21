@@ -65,7 +65,19 @@ namespace HRMSTeam3.Admin
 
         protected void Button2_Click(object sender, EventArgs e)
         {
+            string empName=DropDownList1.SelectedValue, appDate=TextBox1.Text, desg= DropDownList2.SelectedValue, dept= DropDownList3.SelectedValue, custExp= DropDownList14.SelectedValue, mark= DropDownList15.SelectedValue, manag= DropDownList16.SelectedValue, admin= DropDownList17.SelectedValue, pSkills= DropDownList18.SelectedValue, QuaWork= DropDownList4.SelectedValue, Effic= DropDownList5.SelectedValue, inte= DropDownList7.SelectedValue, proff= DropDownList8.SelectedValue, teamW= DropDownList9.SelectedValue, crit= DropDownList10.SelectedValue, conf= DropDownList11.SelectedValue, atten= DropDownList12.SelectedValue, ability= DropDownList13.SelectedValue,stat= DropDownList6.SelectedValue;
+            string q = $"exec InsertOrUpdateAppraisal '0','{empName}','{appDate}','{desg}','{dept}','{custExp}','{mark}','{manag}','{admin}','{pSkills}','{QuaWork}','{Effic}','{inte}','{proff}','{teamW}','{crit}','{conf}','{atten}','{ability}','{stat}'";
+            SqlCommand cmd = new SqlCommand(q, conn);
+            int rows = cmd.ExecuteNonQuery();
+            if (rows > 0)
+            {
+                Response.Write("<script>alert('Appraisal Added Successfully...')</script>");
 
+            }
+            else
+            {
+                Response.Write("<script>alert('Error 404..')</script>");
+            }
         }
     }
 }

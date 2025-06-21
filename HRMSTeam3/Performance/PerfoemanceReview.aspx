@@ -120,7 +120,7 @@
             </div>
 
             <div class="text-end mt-4">
-                <asp:Button ID="btnSubmit" runat="server" Text="Submit Review" CssClass="btn btn-custom" />
+                <asp:Button ID="btnSubmit" runat="server" Text="Submit Review" CssClass="btn btn-custom" OnClick="btnSubmit_Click" />
             </div>
         </div>
     </div>

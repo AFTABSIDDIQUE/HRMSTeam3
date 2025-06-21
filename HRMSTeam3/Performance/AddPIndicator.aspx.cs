@@ -60,9 +60,35 @@ namespace HRMSTeam3.Admin
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-            string q = "exec AddPIndicator ";
+            string desig = DropDownList10.SelectedValue, dept = DropDownList11.SelectedValue, custExp = DropDownList1.SelectedValue, mark = DropDownList2.SelectedValue, mang = DropDownList3.SelectedValue, admin = DropDownList4.SelectedValue, integ = DropDownList5.SelectedValue, prof = DropDownList6.SelectedValue, twork = DropDownList7.SelectedValue, crit = DropDownList8.SelectedValue, stat = DropDownList9.SelectedValue;
+            string q = $"exec InsertOrUpdatePIndicator '0','{desig}','{dept}','{custExp}','{mark}','{mang}','{admin}','{integ}','{prof}','{twork}','{crit}','{stat}'";
             SqlCommand cmd = new SqlCommand(q,conn);
-            cmd.ExecuteNonQuery();
+            int rows = cmd.ExecuteNonQuery();
+            if (rows > 0)
+            {
+                Response.Write("<script>alert('Performace Indicator Added Successfully...')</script>");
+                Clear();
+            }
+            else
+            {
+                Response.Write("<script>alert('Error 404..')</script>");
+            }
+
+        }
+
+        public void Clear()
+        {
+            DropDownList1.ClearSelection();
+            DropDownList2.ClearSelection();
+            DropDownList3.ClearSelection();
+            DropDownList4.ClearSelection();
+            DropDownList5.ClearSelection();
+            DropDownList6.ClearSelection();
+            DropDownList7.ClearSelection();
+            DropDownList8.ClearSelection();
+            DropDownList9.ClearSelection();
+            DropDownList10.ClearSelection();
+            DropDownList11.ClearSelection();
 
         }
     }

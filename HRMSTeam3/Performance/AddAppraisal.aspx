@@ -42,12 +42,12 @@
                     <asp:TableRow>
                         <asp:TableCell>Customer Experience</asp:TableCell>
                         <asp:TableCell>
-                            <asp:DropDownList ID="ddlCustomerExperience" runat="server" CssClass="form-select">
-                                <asp:ListItem Text="1 - Poor" Value="1" />
-                                <asp:ListItem Text="2 - Fair" Value="2" />
-                                <asp:ListItem Text="3 - Good" Value="3" />
-                                <asp:ListItem Text="4 - Very Good" Value="4" />
-                                <asp:ListItem Text="5 - Excellent" Value="5" />
+                            <asp:DropDownList ID="DropDownList14" runat="server" CssClass="form-select">
+                                    <asp:ListItem Text="1 - Poor" Value="Poor" />
+                                    <asp:ListItem Text="2 - Fair" Value="Fair" />
+                                    <asp:ListItem Text="3 - Good" Value="Good" />
+                                    <asp:ListItem Text="4 - Very Good" Value="Very Good" />
+                                    <asp:ListItem Text="5 - Excellent" Value="Excellent" />
                             </asp:DropDownList>
                         </asp:TableCell>
                     </asp:TableRow>
@@ -55,12 +55,12 @@
                     <asp:TableRow>
                         <asp:TableCell>Marketing</asp:TableCell>
                         <asp:TableCell>
-                            <asp:DropDownList ID="ddlTechnicalKnowledge" runat="server" CssClass="form-select">
-                                <asp:ListItem Text="1 - Poor" Value="1" />
-                                <asp:ListItem Text="2 - Fair" Value="2" />
-                                <asp:ListItem Text="3 - Good" Value="3" />
-                                <asp:ListItem Text="4 - Very Good" Value="4" />
-                                <asp:ListItem Text="5 - Excellent" Value="5" />
+                            <asp:DropDownList ID="DropDownList15" runat="server" CssClass="form-select">
+                                    <asp:ListItem Text="1 - Poor" Value="Poor" />
+                                    <asp:ListItem Text="2 - Fair" Value="Fair" />
+                                    <asp:ListItem Text="3 - Good" Value="Good" />
+                                    <asp:ListItem Text="4 - Very Good" Value="Very Good" />
+                                    <asp:ListItem Text="5 - Excellent" Value="Excellent" />
                             </asp:DropDownList>
                         </asp:TableCell>
                     </asp:TableRow>
@@ -68,12 +68,12 @@
                     <asp:TableRow>
                         <asp:TableCell>Management</asp:TableCell>
                         <asp:TableCell>
-                            <asp:DropDownList ID="ddlCommunication" runat="server" CssClass="form-select">
-                                <asp:ListItem Text="1 - Poor" Value="1" />
-                                <asp:ListItem Text="2 - Fair" Value="2" />
-                                <asp:ListItem Text="3 - Good" Value="3" />
-                                <asp:ListItem Text="4 - Very Good" Value="4" />
-                                <asp:ListItem Text="5 - Excellent" Value="5" />
+                            <asp:DropDownList ID="DropDownList16" runat="server" CssClass="form-select">
+                                    <asp:ListItem Text="1 - Poor" Value="Poor" />
+                                    <asp:ListItem Text="2 - Fair" Value="Fair" />
+                                    <asp:ListItem Text="3 - Good" Value="Good" />
+                                    <asp:ListItem Text="4 - Very Good" Value="Very Good" />
+                                    <asp:ListItem Text="5 - Excellent" Value="Excellent" />
                             </asp:DropDownList>
                         </asp:TableCell>
                     </asp:TableRow>
@@ -81,12 +81,12 @@
                     <asp:TableRow>
                         <asp:TableCell>Administration</asp:TableCell>
                         <asp:TableCell>
-                            <asp:DropDownList ID="ddlTeamwork" runat="server" CssClass="form-select">
-                                <asp:ListItem Text="1 - Poor" Value="1" />
-                                <asp:ListItem Text="2 - Fair" Value="2" />
-                                <asp:ListItem Text="3 - Good" Value="3" />
-                                <asp:ListItem Text="4 - Very Good" Value="4" />
-                                <asp:ListItem Text="5 - Excellent" Value="5" />
+                            <asp:DropDownList ID="DropDownList17" runat="server" CssClass="form-select">
+                                    <asp:ListItem Text="1 - Poor" Value="Poor" />
+                                    <asp:ListItem Text="2 - Fair" Value="Fair" />
+                                    <asp:ListItem Text="3 - Good" Value="Good" />
+                                    <asp:ListItem Text="4 - Very Good" Value="Very Good" />
+                                    <asp:ListItem Text="5 - Excellent" Value="Excellent" />
                             </asp:DropDownList>
                         </asp:TableCell>
                     </asp:TableRow>
@@ -94,12 +94,12 @@
                     <asp:TableRow>
                         <asp:TableCell>Presentation Skills</asp:TableCell>
                         <asp:TableCell>
-                            <asp:DropDownList ID="ddlProblemSolving" runat="server" CssClass="form-select">
-                                <asp:ListItem Text="1 - Poor" Value="1" />
-                                <asp:ListItem Text="2 - Fair" Value="2" />
-                                <asp:ListItem Text="3 - Good" Value="3" />
-                                <asp:ListItem Text="4 - Very Good" Value="4" />
-                                <asp:ListItem Text="5 - Excellent" Value="5" />
+                            <asp:DropDownList ID="DropDownList18" runat="server" CssClass="form-select">
+                                    <asp:ListItem Text="1 - Poor" Value="Poor" />
+                                    <asp:ListItem Text="2 - Fair" Value="Fair" />
+                                    <asp:ListItem Text="3 - Good" Value="Good" />
+                                    <asp:ListItem Text="4 - Very Good" Value="Very Good" />
+                                    <asp:ListItem Text="5 - Excellent" Value="Excellent" />
                             </asp:DropDownList>
                         </asp:TableCell>
                     </asp:TableRow>
@@ -108,11 +108,11 @@
                         <asp:TableCell>Quality of Work</asp:TableCell>
                         <asp:TableCell>
                             <asp:DropDownList ID="DropDownList4" runat="server" CssClass="form-select">
-                                <asp:ListItem Text="1 - Poor" Value="1" />
-                                <asp:ListItem Text="2 - Fair" Value="2" />
-                                <asp:ListItem Text="3 - Good" Value="3" />
-                                <asp:ListItem Text="4 - Very Good" Value="4" />
-                                <asp:ListItem Text="5 - Excellent" Value="5" />
+                                    <asp:ListItem Text="1 - Poor" Value="Poor" />
+                                    <asp:ListItem Text="2 - Fair" Value="Fair" />
+                                    <asp:ListItem Text="3 - Good" Value="Good" />
+                                    <asp:ListItem Text="4 - Very Good" Value="Very Good" />
+                                    <asp:ListItem Text="5 - Excellent" Value="Excellent" />
                             </asp:DropDownList>
                         </asp:TableCell>
                     </asp:TableRow>
@@ -121,11 +121,11 @@
                         <asp:TableCell>Efficiency</asp:TableCell>
                         <asp:TableCell>
                             <asp:DropDownList ID="DropDownList5" runat="server" CssClass="form-select">
-                                <asp:ListItem Text="1 - Poor" Value="1" />
-                                <asp:ListItem Text="2 - Fair" Value="2" />
-                                <asp:ListItem Text="3 - Good" Value="3" />
-                                <asp:ListItem Text="4 - Very Good" Value="4" />
-                                <asp:ListItem Text="5 - Excellent" Value="5" />
+                                    <asp:ListItem Text="1 - Poor" Value="Poor" />
+                                    <asp:ListItem Text="2 - Fair" Value="Fair" />
+                                    <asp:ListItem Text="3 - Good" Value="Good" />
+                                    <asp:ListItem Text="4 - Very Good" Value="Very Good" />
+                                    <asp:ListItem Text="5 - Excellent" Value="Excellent" />
                             </asp:DropDownList>
                         </asp:TableCell>
                     </asp:TableRow>
@@ -143,11 +143,11 @@
                             <asp:TableCell>Integrity</asp:TableCell>
                             <asp:TableCell>
                                 <asp:DropDownList ID="DropDownList7" runat="server" CssClass="form-select">
-                                    <asp:ListItem Text="1 - Poor" Value="1" />
-                                    <asp:ListItem Text="2 - Fair" Value="2" />
-                                    <asp:ListItem Text="3 - Good" Value="3" />
-                                    <asp:ListItem Text="4 - Very Good" Value="4" />
-                                    <asp:ListItem Text="5 - Excellent" Value="5" />
+                                    <asp:ListItem Text="1 - Poor" Value="Poor" />
+                                    <asp:ListItem Text="2 - Fair" Value="Fair" />
+                                    <asp:ListItem Text="3 - Good" Value="Good" />
+                                    <asp:ListItem Text="4 - Very Good" Value="Very Good" />
+                                    <asp:ListItem Text="5 - Excellent" Value="Excellent" />
                                 </asp:DropDownList>
                             </asp:TableCell>
                         </asp:TableRow>
@@ -156,11 +156,11 @@
                             <asp:TableCell>Professionalism</asp:TableCell>
                             <asp:TableCell>
                                 <asp:DropDownList ID="DropDownList8" runat="server" CssClass="form-select">
-                                    <asp:ListItem Text="1 - Poor" Value="1" />
-                                    <asp:ListItem Text="2 - Fair" Value="2" />
-                                    <asp:ListItem Text="3 - Good" Value="3" />
-                                    <asp:ListItem Text="4 - Very Good" Value="4" />
-                                    <asp:ListItem Text="5 - Excellent" Value="5" />
+                                    <asp:ListItem Text="1 - Poor" Value="Poor" />
+                                    <asp:ListItem Text="2 - Fair" Value="Fair" />
+                                    <asp:ListItem Text="3 - Good" Value="Good" />
+                                    <asp:ListItem Text="4 - Very Good" Value="Very Good" />
+                                    <asp:ListItem Text="5 - Excellent" Value="Excellent" />
                                 </asp:DropDownList>
                             </asp:TableCell>
                         </asp:TableRow>
@@ -169,11 +169,11 @@
                             <asp:TableCell>TeamWork</asp:TableCell>
                             <asp:TableCell>
                                 <asp:DropDownList ID="DropDownList9" runat="server" CssClass="form-select">
-                                    <asp:ListItem Text="1 - Poor" Value="1" />
-                                    <asp:ListItem Text="2 - Fair" Value="2" />
-                                    <asp:ListItem Text="3 - Good" Value="3" />
-                                    <asp:ListItem Text="4 - Very Good" Value="4" />
-                                    <asp:ListItem Text="5 - Excellent" Value="5" />
+                                    <asp:ListItem Text="1 - Poor" Value="Poor" />
+                                    <asp:ListItem Text="2 - Fair" Value="Fair" />
+                                    <asp:ListItem Text="3 - Good" Value="Good" />
+                                    <asp:ListItem Text="4 - Very Good" Value="Very Good" />
+                                    <asp:ListItem Text="5 - Excellent" Value="Excellent" />
                                 </asp:DropDownList>
                             </asp:TableCell>
                         </asp:TableRow>
@@ -182,11 +182,11 @@
                             <asp:TableCell>Critical Thinking</asp:TableCell>
                             <asp:TableCell>
                                 <asp:DropDownList ID="DropDownList10" runat="server" CssClass="form-select">
-                                    <asp:ListItem Text="1 - Poor" Value="1" />
-                                    <asp:ListItem Text="2 - Fair" Value="2" />
-                                    <asp:ListItem Text="3 - Good" Value="3" />
-                                    <asp:ListItem Text="4 - Very Good" Value="4" />
-                                    <asp:ListItem Text="5 - Excellent" Value="5" />
+                                    <asp:ListItem Text="1 - Poor" Value="Poor" />
+                                    <asp:ListItem Text="2 - Fair" Value="Fair" />
+                                    <asp:ListItem Text="3 - Good" Value="Good" />
+                                    <asp:ListItem Text="4 - Very Good" Value="Very Good" />
+                                    <asp:ListItem Text="5 - Excellent" Value="Excellent" />
                                 </asp:DropDownList>
                             </asp:TableCell>
                         </asp:TableRow>
@@ -195,11 +195,11 @@
                             <asp:TableCell>Conflict Management</asp:TableCell>
                             <asp:TableCell>
                                 <asp:DropDownList ID="DropDownList11" runat="server" CssClass="form-select">
-                                    <asp:ListItem Text="1 - Poor" Value="1" />
-                                    <asp:ListItem Text="2 - Fair" Value="2" />
-                                    <asp:ListItem Text="3 - Good" Value="3" />
-                                    <asp:ListItem Text="4 - Very Good" Value="4" />
-                                    <asp:ListItem Text="5 - Excellent" Value="5" />
+                                    <asp:ListItem Text="1 - Poor" Value="Poor" />
+                                    <asp:ListItem Text="2 - Fair" Value="Fair" />
+                                    <asp:ListItem Text="3 - Good" Value="Good" />
+                                    <asp:ListItem Text="4 - Very Good" Value="Very Good" />
+                                    <asp:ListItem Text="5 - Excellent" Value="Excellent" />
                                 </asp:DropDownList>
                             </asp:TableCell>
                         </asp:TableRow>
@@ -208,11 +208,11 @@
                             <asp:TableCell>Attendance</asp:TableCell>
                             <asp:TableCell>
                                 <asp:DropDownList ID="DropDownList12" runat="server" CssClass="form-select">
-                                    <asp:ListItem Text="1 - Poor" Value="1" />
-                                    <asp:ListItem Text="2 - Fair" Value="2" />
-                                    <asp:ListItem Text="3 - Good" Value="3" />
-                                    <asp:ListItem Text="4 - Very Good" Value="4" />
-                                    <asp:ListItem Text="5 - Excellent" Value="5" />
+                                    <asp:ListItem Text="1 - Poor" Value="Poor" />
+                                    <asp:ListItem Text="2 - Fair" Value="Fair" />
+                                    <asp:ListItem Text="3 - Good" Value="Good" />
+                                    <asp:ListItem Text="4 - Very Good" Value="Very Good" />
+                                    <asp:ListItem Text="5 - Excellent" Value="Excellent" />
                                 </asp:DropDownList>
                             </asp:TableCell>
                         </asp:TableRow>
@@ -221,11 +221,11 @@
                             <asp:TableCell>AbilityToMeetDeadline</asp:TableCell>
                             <asp:TableCell>
                                 <asp:DropDownList ID="DropDownList13" runat="server" CssClass="form-select">
-                                    <asp:ListItem Text="1 - Poor" Value="1" />
-                                    <asp:ListItem Text="2 - Fair" Value="2" />
-                                    <asp:ListItem Text="3 - Good" Value="3" />
-                                    <asp:ListItem Text="4 - Very Good" Value="4" />
-                                    <asp:ListItem Text="5 - Excellent" Value="5" />
+                                    <asp:ListItem Text="1 - Poor" Value="Poor" />
+                                    <asp:ListItem Text="2 - Fair" Value="Fair" />
+                                    <asp:ListItem Text="3 - Good" Value="Good" />
+                                    <asp:ListItem Text="4 - Very Good" Value="Very Good" />
+                                    <asp:ListItem Text="5 - Excellent" Value="Excellent" />
                                 </asp:DropDownList>
                             </asp:TableCell>
                         </asp:TableRow>

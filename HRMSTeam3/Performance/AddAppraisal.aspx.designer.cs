@@ -60,49 +60,49 @@ namespace HRMSTeam3.Admin
         protected global::System.Web.UI.WebControls.Table Table1;
 
         /// <summary>
-        /// ddlCustomerExperience control.
+        /// DropDownList14 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlCustomerExperience;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList14;
 
         /// <summary>
-        /// ddlTechnicalKnowledge control.
+        /// DropDownList15 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlTechnicalKnowledge;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList15;
 
         /// <summary>
-        /// ddlCommunication control.
+        /// DropDownList16 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlCommunication;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList16;
 
         /// <summary>
-        /// ddlTeamwork control.
+        /// DropDownList17 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlTeamwork;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList17;
 
         /// <summary>
-        /// ddlProblemSolving control.
+        /// DropDownList18 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlProblemSolving;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList18;
 
         /// <summary>
         /// DropDownList4 control.
