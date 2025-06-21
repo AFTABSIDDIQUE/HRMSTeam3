@@ -71,12 +71,26 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin\AdminHome.aspx" />
+    <Content Include="Admin\Bulkupload.aspx" />
+    <Content Include="Admin\CreateEmp.aspx" />
+    <Content Include="Admin\Document_mgmt.aspx" />
+    <Content Include="Admin\UpdateEmp.aspx" />
     <Content Include="Admin\UserCreation.aspx" />
     <Content Include="Admin\UserUpdation.aspx" />
+    <Content Include="Admin\ViewAllEmp.aspx" />
+    <Content Include="Admin\viewdocs.aspx" />
     <Content Include="HR\HRHome.aspx" />
     <Content Include="LoginDB.aspx" />
+    <Content Include="Manager\assingticket.aspx" />
     <Content Include="Manager\ManagerHome.aspx" />
+    <Content Include="User\assigned_tickets.aspx" />
+    <Content Include="User\Attendence.aspx" />
+    <Content Include="User\personaldocs.aspx" />
+    <Content Include="User\Tickets.aspx" />
+    <Content Include="User\UpdateInfo.aspx" />
     <Content Include="User\UserHome.aspx" />
+    <Content Include="User\ViewData.aspx" />
+    <Content Include="User\yourtickets.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -94,6 +108,34 @@
     <Compile Include="Admin\AdminHome.aspx.designer.cs">
       <DependentUpon>AdminHome.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Bulkupload.aspx.cs">
+      <DependentUpon>Bulkupload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Bulkupload.aspx.designer.cs">
+      <DependentUpon>Bulkupload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CreateEmp.aspx.cs">
+      <DependentUpon>CreateEmp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CreateEmp.aspx.designer.cs">
+      <DependentUpon>CreateEmp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Document_mgmt.aspx.cs">
+      <DependentUpon>Document_mgmt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Document_mgmt.aspx.designer.cs">
+      <DependentUpon>Document_mgmt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UpdateEmp.aspx.cs">
+      <DependentUpon>UpdateEmp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UpdateEmp.aspx.designer.cs">
+      <DependentUpon>UpdateEmp.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\UserCreation.aspx.cs">
       <DependentUpon>UserCreation.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -107,6 +149,20 @@
     </Compile>
     <Compile Include="Admin\UserUpdation.aspx.designer.cs">
       <DependentUpon>UserUpdation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ViewAllEmp.aspx.cs">
+      <DependentUpon>ViewAllEmp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ViewAllEmp.aspx.designer.cs">
+      <DependentUpon>ViewAllEmp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\viewdocs.aspx.cs">
+      <DependentUpon>viewdocs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\viewdocs.aspx.designer.cs">
+      <DependentUpon>viewdocs.aspx</DependentUpon>
     </Compile>
     <Compile Include="HR\HR.Master.cs">
       <DependentUpon>HR.Master</DependentUpon>
@@ -129,6 +185,13 @@
     <Compile Include="LoginDB.aspx.designer.cs">
       <DependentUpon>LoginDB.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Manager\assingticket.aspx.cs">
+      <DependentUpon>assingticket.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manager\assingticket.aspx.designer.cs">
+      <DependentUpon>assingticket.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Manager\Manager.Master.cs">
       <DependentUpon>Manager.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -144,6 +207,41 @@
       <DependentUpon>ManagerHome.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User\assigned_tickets.aspx.cs">
+      <DependentUpon>assigned_tickets.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\assigned_tickets.aspx.designer.cs">
+      <DependentUpon>assigned_tickets.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Attendence.aspx.cs">
+      <DependentUpon>Attendence.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Attendence.aspx.designer.cs">
+      <DependentUpon>Attendence.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\personaldocs.aspx.cs">
+      <DependentUpon>personaldocs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\personaldocs.aspx.designer.cs">
+      <DependentUpon>personaldocs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Tickets.aspx.cs">
+      <DependentUpon>Tickets.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Tickets.aspx.designer.cs">
+      <DependentUpon>Tickets.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\UpdateInfo.aspx.cs">
+      <DependentUpon>UpdateInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\UpdateInfo.aspx.designer.cs">
+      <DependentUpon>UpdateInfo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="User\User.Master.cs">
       <DependentUpon>User.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -157,6 +255,20 @@
     </Compile>
     <Compile Include="User\UserHome.aspx.designer.cs">
       <DependentUpon>UserHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\ViewData.aspx.cs">
+      <DependentUpon>ViewData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\ViewData.aspx.designer.cs">
+      <DependentUpon>ViewData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\yourtickets.aspx.cs">
+      <DependentUpon>yourtickets.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\yourtickets.aspx.designer.cs">
+      <DependentUpon>yourtickets.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -172,7 +284,11 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Admin\Emp Documents\" />
+    <Folder Include="Profilepic\" />
+    <Folder Include="ticket_attach\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

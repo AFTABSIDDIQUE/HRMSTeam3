@@ -59,6 +59,19 @@
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                           </ul>
                         </li>
+                           <li class="nav-item dropdown">
+                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Employees
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="CreateEmp.aspx">Add Employee</a></li>
+                                <li><a class="dropdown-item" href="UpdateEmp.aspx">Update Employee Data</a></li>
+                                <li><a class="dropdown-item" href="ViewAllEmp.aspx">View All Employess</a></li>
+                                  <li><hr class="dropdown-divider"></li>
+                                  <li><a class="dropdown-item" href="Document_mgmt.aspx">Upload Emp Document</a></li>
+                                  <li><a class="dropdown-item" href="Bulkupload.aspx">Bulk Employee Upload</a></li>
+                              </ul>
+                            </li>
                         <li class="nav-item">
                           <a class="nav-link disabled" aria-disabled="true">Disabled</a>
                         </li>

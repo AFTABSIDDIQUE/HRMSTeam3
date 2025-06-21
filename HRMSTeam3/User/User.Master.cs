@@ -19,5 +19,6 @@ namespace HRMSTeam3.User
             Session.Abandon();
             Response.Redirect("../LoginDB.aspx");
         }
+
     }
 }
