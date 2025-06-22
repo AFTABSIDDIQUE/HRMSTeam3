@@ -43,6 +43,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.Cryptography.2.4.0\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.4, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.4\lib\net461\itextsharp.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data.SqlClient, Version=4.6.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Data.SqlClient.4.9.0\lib\net462\System.Data.SqlClient.dll</HintPath>
@@ -71,9 +77,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin\AdminHome.aspx" />
+    <Content Include="Admin\Deduction_type.aspx" />
+    <Content Include="Admin\Earning_type.aspx" />
+    <Content Include="Admin\EmpEarning_det.aspx" />
+    <Content Include="Admin\EmpSalaries.aspx" />
+    <Content Include="Admin\Emp_deduction.aspx" />
+    <Content Include="Admin\GeneratePayslips.aspx" />
+    <Content Include="Admin\TransactionHistory.aspx" />
     <Content Include="HR\HRHome.aspx" />
     <Content Include="LoginDB.aspx" />
     <Content Include="Manager\ManagerHome.aspx" />
+    <Content Include="User\payslip.aspx" />
     <Content Include="User\UserHome.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -91,6 +105,55 @@
     </Compile>
     <Compile Include="Admin\AdminHome.aspx.designer.cs">
       <DependentUpon>AdminHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Deduction_type.aspx.cs">
+      <DependentUpon>Deduction_type.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Deduction_type.aspx.designer.cs">
+      <DependentUpon>Deduction_type.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Earning_type.aspx.cs">
+      <DependentUpon>Earning_type.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Earning_type.aspx.designer.cs">
+      <DependentUpon>Earning_type.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EmpEarning_det.aspx.cs">
+      <DependentUpon>EmpEarning_det.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EmpEarning_det.aspx.designer.cs">
+      <DependentUpon>EmpEarning_det.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EmpSalaries.aspx.cs">
+      <DependentUpon>EmpSalaries.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EmpSalaries.aspx.designer.cs">
+      <DependentUpon>EmpSalaries.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Emp_deduction.aspx.cs">
+      <DependentUpon>Emp_deduction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Emp_deduction.aspx.designer.cs">
+      <DependentUpon>Emp_deduction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GeneratePayslips.aspx.cs">
+      <DependentUpon>GeneratePayslips.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\GeneratePayslips.aspx.designer.cs">
+      <DependentUpon>GeneratePayslips.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\TransactionHistory.aspx.cs">
+      <DependentUpon>TransactionHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\TransactionHistory.aspx.designer.cs">
+      <DependentUpon>TransactionHistory.aspx</DependentUpon>
     </Compile>
     <Compile Include="HR\HR.Master.cs">
       <DependentUpon>HR.Master</DependentUpon>
@@ -128,6 +191,13 @@
       <DependentUpon>ManagerHome.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User\payslip.aspx.cs">
+      <DependentUpon>payslip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\payslip.aspx.designer.cs">
+      <DependentUpon>payslip.aspx</DependentUpon>
+    </Compile>
     <Compile Include="User\User.Master.cs">
       <DependentUpon>User.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -156,7 +226,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Payslips\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
