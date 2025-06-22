@@ -77,7 +77,7 @@
         transition: background-color 0.3s ease;
         }
 
-                .grid-header {
+        .grid-header {
             font-size: 1.5rem;
             font-weight: bold;
             margin-bottom: 20px;
@@ -122,7 +122,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#userDropdown">
+                        <a class="nav-link dropdown-toggle" href="../" data-bs-toggle="collapse" data-bs-target="#userDropdown">
                             Hello <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
                         </a>
                         <div class="collapse" id="userDropdown">
@@ -136,43 +136,55 @@
 
                     <!-- User Management -->
                     <li class="nav-item">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#userManagement">
+                        <a class="nav-link dropdown-toggle" href="../" data-bs-toggle="collapse" data-bs-target="#userManagement">
                             User
                         </a>
                         <div class="collapse" id="userManagement">
                             <ul class="list-unstyled ps-3">
                                 <li><a class="nav-link" href="../UserCreation/user.aspx">View User</a></li>
-                              <%--  <li><a class="nav-link" href="../UserCreation/UserUpdation.aspx">User Updation</a></li>--%>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- Event Management -->
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" href="../" data-bs-toggle="collapse" data-bs-target="#EventManagement">
+                            Event's
+                        </a>
+                        <div class="collapse" id="EventManagement">
+                            <ul class="list-unstyled ps-3">
+                                <li><a class="nav-link" href="/Admin/CalendarTitles/EventName.aspx">Add Event</a></li>
+                                <li><a class="nav-link" href="/Admin/CalendarTitles/AddHolidays.aspx">Add Holiday</a></li>
+                                <li><a class="nav-link" href="/Admin/CalendarTitles/CalendarTitle.aspx">View Calendar</a></li>
                             </ul>
                         </div>
                     </li>
 
                     <!-- Employee Management -->
                     <li class="nav-item">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#employeeManagement">
+                        <a class="nav-link dropdown-toggle" href="../" data-bs-toggle="collapse" data-bs-target="#employeeManagement">
                             Emp
                         </a>
                         <div class="collapse" id="employeeManagement">
                             <ul class="list-unstyled ps-3">
-                                <li><a class="nav-link" href="../Admin/CreateEmp.aspx">Add Emp</a></li>
+                                <li><a class="nav-link" href="CreateEmp.aspx">Add Emp</a></li>
                                 <li><a class="nav-link" href="UpdateEmp.aspx">Update Emp</a></li>
                                 <li><a class="nav-link" href="Bulkupload.aspx">BulkUpload Emp</a></li>
                                 <li><a class="nav-link" href="ViewAllEmp.aspx">View Emp</a></li>
-                              <%--  <li><a class="nav-link" href="../UserCreation/UserUpdation.aspx">User Updation</a></li>--%>
                             </ul>
                         </div>
                     </li>
 
                     <!-- Document Management -->
                     <li class="nav-item">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#documentManagement">
+                        <a class="nav-link dropdown-toggle" href="../" data-bs-toggle="collapse" data-bs-target="#documentManagement">
                             Document
                         </a>
                         <div class="collapse" id="documentManagement">
                             <ul class="list-unstyled ps-3">
+                                <li><a class="nav-link" href="GenerateOfferLetter.aspx">Generate Offer</a></li>
+                                <li><a class="nav-link" href="GenerateRelievingLetter.aspx">Generate Relieving<a></li>
                                 <li><a class="nav-link" href="Document_mgmt.aspx">Add Document</a></li>
                                 <li><a class="nav-link" href="viewdocs.aspx">View</a></li>
-                              <%--  <li><a class="nav-link" href="../UserCreation/UserUpdation.aspx">User Updation</a></li>--%>
                             </ul>
                         </div>
                     </li>
@@ -180,28 +192,57 @@
 
                     <!-- Performance Management -->
                     <li class="nav-item">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#performanceMgmt">
+                        <a class="nav-link dropdown-toggle" href="../" data-bs-toggle="collapse" data-bs-target="#performanceMgmt">
                             Performance
                         </a>
                         <div class="collapse" id="performanceMgmt">
                             <ul class="list-unstyled ps-3">
-                                <li><a class="nav-link" href="../Performance/AddPIndicator.aspx">Performance Indicator</a></li>
-                                <li><a class="nav-link" href="../Performance/AddAppraisal.aspx">Add Appraisal</a></li>
-                                <li><a class="nav-link" href="../Performance/PerfoemanceReview.aspx">PerfoemanceReview</a></li>
+                                <li><a class="nav-link" href="/Performance/AddPIndicator.aspx">Performance Indicator</a></li>
+                                <li><a class="nav-link" href="/Performance/AddAppraisal.aspx">Add Appraisal</a></li>
+                                <li><a class="nav-link" href="/Performance/PerfoemanceReview.aspx">PerfoemanceReview</a></li>
                             </ul>
                         </div>
                     </li>
 
                     <!-- Training -->
                     <li class="nav-item">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#training">
+                        <a class="nav-link dropdown-toggle" href="../" data-bs-toggle="collapse" data-bs-target="#training">
                             Training
                         </a>
                         <div class="collapse" id="training">
                             <ul class="list-unstyled ps-3">
-                                <li><a class="nav-link" href="../Training/Trainer.aspx">Add Trainer</a></li>
-                                <li><a class="nav-link" href="../Training/TrainingType.aspx">Training Type</a></li>
-                                <li><a class="nav-link" href="../Training/Training.aspx">Assign Training</a></li>
+                                <li><a class="nav-link" href="/Training/Trainer.aspx">Add Trainer</a></li>
+                                <li><a class="nav-link" href="/Training/TrainingType.aspx">Training Type</a></li>
+                                <li><a class="nav-link" href="/Training/Training.aspx">Assign Training</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- Leave Management -->
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" href="../" data-bs-toggle="collapse" data-bs-target="#LeaveMgmt">
+                            Leave
+                        </a>
+                        <div class="collapse" id="LeaveMgmt">
+                            <ul class="list-unstyled ps-3">
+                                <li><a class="nav-link" href="/Admin/LeaveManagement/LeaveApprovals.aspx">Leave Approvals</a></li>
+                                <li><a class="nav-link" href="/Admin/LeaveManagement/LeaveDocumentation.aspx">Leave Documentation</a></li>
+                                <li><a class="nav-link" href="/Admin/LeaveManagement/LeavePolicySetup.aspx">Leave Policy</a></li>
+                                <li><a class="nav-link" href="/Admin/LeaveManagement/LeaveReports.aspx">Leave Report</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                   <!-- Report Management -->
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" href="../" data-bs-toggle="collapse" data-bs-target="#ReportMgmt">
+                            Reports
+                        </a>
+                        <div class="collapse" id="ReportMgmt">
+                            <ul class="list-unstyled ps-3">
+                                <li><a class="nav-link" href="/Admin/Reports/ReportsForEmployee.aspx">Employee Report</a></li>
+                                <li><a class="nav-link" href="/Admin/Reports/ReportsForLeave.aspx">Leave Report</a></li>
+                                <li><a class="nav-link" href="/Admin/Reports/ReportForPayroll.aspx">Payroll Report</a></li>
                             </ul>
                         </div>
                     </li>

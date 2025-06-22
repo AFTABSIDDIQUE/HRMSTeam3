@@ -57,7 +57,7 @@ namespace HRMSTeam3.User.Leaves_Management_users
         {
 
             string name = EmpName.Text.Trim();
-            string DeptExists = $"select department from employee where full_name = '{name}'";
+            string DeptExists = $"select department from employees where full_name = '{name}'";
             SqlCommand checkDept = new SqlCommand(DeptExists, conn);
 
 
@@ -87,7 +87,7 @@ namespace HRMSTeam3.User.Leaves_Management_users
             string reason1 = Reason.Text;
 
             //check if user exists in the employee table or not
-            string empExists = $"select count(*) from employee where full_name = '{name}'";
+            string empExists = $"select count(*) from employees where full_name = '{name}'";
             SqlCommand checkEmp=new SqlCommand(empExists,conn);
             int emp = (int)checkEmp.ExecuteScalar();
 

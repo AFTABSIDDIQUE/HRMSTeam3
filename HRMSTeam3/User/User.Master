@@ -137,7 +137,7 @@
      transition: background-color 0.3s ease;
      }
 
-             .grid-header {
+     .grid-header {
          font-size: 1.5rem;
          font-weight: bold;
          margin-bottom: 20px;
@@ -182,7 +182,7 @@
 
                     <!-- Hello User -->
                     <li class="nav-item">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#userDropdown">
+                        <a class="nav-link dropdown-toggle" href="../" data-bs-toggle="collapse" data-bs-target="#userDropdown">
                             Hello <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
                         </a>
                         <div class="collapse" id="userDropdown">
@@ -199,7 +199,7 @@
                     </li>
                    <!-- Employee Menu -->
                     <li class="nav-item">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#EmployeeMenu">
+                        <a class="nav-link dropdown-toggle" href="../" data-bs-toggle="collapse" data-bs-target="#EmployeeMenu">
                             Your Info
                         </a>
                         <div class="collapse" id="EmployeeMenu">
@@ -211,10 +211,24 @@
                         </div>
                     </li>
 
+                    <!-- Leave Menu -->
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" href="../" data-bs-toggle="collapse" data-bs-target="#LeaveMenu">
+                            Leave
+                        </a>
+                        <div class="collapse" id="LeaveMenu">
+                            <ul class="list-unstyled ps-3">
+                                <li><a class="nav-link" href="/User/LeavesManagementusers/apply.aspx">Apply Leaves</a></li>
+                                <li><a class="nav-link" href="/User/LeavesManagementusers/LeaveBalance.aspx">Leave Balance</a></li>
+                                <li><a class="nav-link" href="/User/LeavesManagementusers/LeaveCalender.aspx">Leave Calendar</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
 
                     <!-- Support Menu -->
                     <li class="nav-item">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#TicketMenu">
+                        <a class="nav-link dropdown-toggle" href="../" data-bs-toggle="collapse" data-bs-target="#TicketMenu">
                             Support
                         </a>
                         <div class="collapse" id="TicketMenu">
@@ -227,7 +241,7 @@
 
                     <!-- Training Menu -->
                     <li class="nav-item">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#trainingMenu">
+                        <a class="nav-link dropdown-toggle" href="../" data-bs-toggle="collapse" data-bs-target="#trainingMenu">
                             Training
                         </a>
                         <div class="collapse" id="trainingMenu">

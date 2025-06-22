@@ -70,7 +70,7 @@
 
                     <!-- Logged-in User -->
                     <li class="nav-item">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#userDropdown">
+                        <a class="nav-link dropdown-toggle" href="../" data-bs-toggle="collapse" data-bs-target="#userDropdown">
                             Hello <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
                         </a>
                         <div class="collapse" id="userDropdown">
@@ -99,7 +99,7 @@
 
                     <!-- Training -->
                     <li class="nav-item">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#training">
+                        <a class="nav-link dropdown-toggle" href="../" data-bs-toggle="collapse" data-bs-target="#training">
                             Training
                         </a>
                         <div class="collapse" id="training">

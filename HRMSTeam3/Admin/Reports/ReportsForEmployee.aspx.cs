@@ -27,11 +27,11 @@ namespace HRMSTeam3.Admin.Reports
         private void BindDeptDropdown()
         {
            
-                SqlCommand cmd = new SqlCommand("SELECT DISTINCT dept FROM Employees", conn);
+                SqlCommand cmd = new SqlCommand("SELECT DISTINCT department FROM Employees", conn);
                
                 ddlDept.DataSource = cmd.ExecuteReader();
-                ddlDept.DataTextField = "dept";
-                ddlDept.DataValueField = "dept";
+                ddlDept.DataTextField = "department";
+                ddlDept.DataValueField = "department";
                 ddlDept.DataBind();
                 ddlDept.Items.Insert(0, new System.Web.UI.WebControls.ListItem("All", ""));
             
@@ -56,11 +56,11 @@ namespace HRMSTeam3.Admin.Reports
             string status = ddlStatus.SelectedValue;
 
             
-                string query = @"SELECT dept, COUNT(*) AS EmpCount 
+                string query = @"SELECT department, COUNT(*) AS EmpCount 
                                  FROM Employees 
-                                 WHERE (@dept = '' OR dept = @dept) AND 
+                                 WHERE (@dept = '' OR department = @dept) AND 
                                        (@status = '' OR status = @status) 
-                                 GROUP BY dept";
+                                 GROUP BY department";
 
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@dept", dept);
@@ -74,11 +74,11 @@ namespace HRMSTeam3.Admin.Reports
             while (dr.Read())
             {
                 int pointIndex = ChartFiltered.Series["FilteredSeries"].Points.AddXY(
-                    dr["dept"].ToString(), Convert.ToInt32(dr["EmpCount"])
+                    dr["department"].ToString(), Convert.ToInt32(dr["EmpCount"])
                 );
 
                 ChartFiltered.Series["FilteredSeries"].Points[pointIndex].ToolTip =
-                    $"{dr["dept"]}: {dr["EmpCount"]} employees";
+                    $"{dr["department"]}: {dr["EmpCount"]} employees";
             }
     
         }
@@ -88,10 +88,10 @@ namespace HRMSTeam3.Admin.Reports
             string dept = ddlDept.SelectedValue;
             string status = ddlStatus.SelectedValue;
             string query = @"
-        SELECT status, COUNT(*) AS EmpCount
-        FROM Employees where (@dept = '' OR dept = @dept) AND 
-                                       (@status = '' OR status = @status)
-        GROUP BY status";
+            SELECT status, COUNT(*) AS EmpCount
+            FROM Employees where (@dept = '' OR department = @dept) AND 
+                                           (@status = '' OR status = @status)
+            GROUP BY status";
 
             SqlCommand cmd = new SqlCommand(query, conn);
             cmd.Parameters.AddWithValue("@dept", dept);

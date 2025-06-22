@@ -120,30 +120,41 @@
 
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a class="nav-link" href="Dashboard.aspx">Home</a>
+                        <a class="nav-link" href="ManagerHome.aspx">Home</a>
                     </li>
 
                     <!-- User Info -->
                     <li class="nav-item">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#userDropdown">
+                        <a class="nav-link dropdown-toggle" href="../" data-bs-toggle="collapse" data-bs-target="#userDropdown">
                             Hello <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
                         </a>
                         <div class="collapse" id="userDropdown">
                             <ul class="list-unstyled ps-3">
                                 <li>
                                     <a class="nav-link" ><asp:Button ID="Button1" CssClass="dropdown-item" runat="server" Text="Logout"  OnClick="Button1_Click" /></a>
-<%--                                    <a class="nav-link">
-                                        
-                                        <asp:Button ID="Button1" CssClass="dropdown-item" runat="server" Text="Logout" OnClick="Button1_Click" />
-                                    </a>--%>
                                 </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                     <!-- Leave Menu -->
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" href="../" data-bs-toggle="collapse" data-bs-target="#LeaveMgmt">
+                            Leave
+                        </a>
+                        <div class="collapse" id="LeaveMgmt">
+                            <ul class="list-unstyled ps-3">
+                                <li><a class="nav-link" href="/Manager/LeaveManagement/LeaveApprovals.aspx">Approve Leaves</a></li>
+                                <li><a class="nav-link" href="/Manager/LeaveManagement/LeaveDocumentation.aspx">Leave Documentation</a></li>
+                                <li><a class="nav-link" href="/Manager/LeaveManagement/LeavePolicySetup.aspx">Leave Policy</a></li>
+                                <li><a class="nav-link" href="/Manager/LeaveManagement/LeaveReports.aspx">Leave Report</a></li>
                             </ul>
                         </div>
                     </li>
 
                     <!-- Ticket Menu -->
                     <li class="nav-item">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#TicketMenu">
+                        <a class="nav-link dropdown-toggle" href="../" data-bs-toggle="collapse" data-bs-target="#TicketMenu">
                             Support Tickets
                         </a>
                         <div class="collapse" id="TicketMenu">
